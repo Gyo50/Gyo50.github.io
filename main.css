@@ -16,60 +16,58 @@ li {
     list-style-type: none;
 }
 
-/* 머리 */
+/* --------------------------머리 ---------------------*/
 header {
-    height: auto;
-    position: fixed;
     right: 0;
     top: 0;
-    width: 100%;
     z-index: 99999998;
+    position: relative;
+    
 }
-
-.manuBar {
-    align-items: center;
-    background-color: #0000;
-    background-color: #000;
-    box-sizing: initial;
-    display: flex;
+.manuBar .logo a{
     height: 100px;
-    justify-content: space-between;
-
 }
-
-.manuBar .manuList li {
-    padding: 0 100px
+.manuBar {
+    background-color: #000;
+    display: flex;
+    justify-content: flex-start;
+    text-align: center;
+    width: 100%;
+    position: fixed;
+    height: 100px;
 }
-
+.manuBar .manuList li a{
+    padding: 0 90px;
+    line-height: 100px;
+    display: block;
+}
 .manuBar .manuList {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    line-height: 100px;
-    margin: 0 auto;
+    
 }
 
 .manuBar .logo {
-    align-items: center;
-    display: flex;
-    height: 100px;
-    justify-content: center;
+    margin-left: 50px;
+    margin-right: 650px;
 }
 
 .manuBar .logo img {
     height: 100px;
 }
 
-/* 처음 화면 */
+/* ------------------------처음 화면 -------------------*/
 .content-main {
     display: flex;
     justify-content: center;
     align-items: center;
     height: calc(100vh - 80px);
     text-align: center;
-    padding: 20px;
     background-image: url(./company.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .text-main {
@@ -89,12 +87,11 @@ header {
     line-height: 1.6;
 }
 
-/* 소개 */
-
-
+/* ---------------------------소개 ---------------------*/
 .content-intro {
-    padding: 50px 20px;
+    padding: 100px 20px;
     text-align: center;
+    height: 900px;
 }
 
 .company-intro {
@@ -108,7 +105,6 @@ header {
     margin-bottom: 20px;
 }
 
-
 .intro-gird {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -118,7 +114,6 @@ header {
 
 
 .intro {
-    background-color: #fff;
     padding: 20px;
     border-radius: 8px;
     text-align: left;
@@ -144,4 +139,67 @@ header {
 }
 .intro-gird:nth-child(1){
     background-image: url(./imoge.png);
+}
+.intro-img{
+    width: 50px;
+    height: auto; 
+}
+
+/*------------------------ 게임 소개------------------*/
+content-game {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.game-intro {
+    max-width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+
+content-game h2 {
+    font-size: 2em;
+    color: #333;
+    margin-bottom: 30px;
+}
+/* 게임 카드 스타일 */
+.gameCard {
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s;
+}
+
+.gameCard:hover {
+    transform: translateY(-5px); /* 호버 시 살짝 올라오는 효과 */
+}
+.gameCard1:hover {
+    transform: translateY(-5px); /* 호버 시 살짝 올라오는 효과 */
+}
+.gameImage {
+    width: 100%;
+    height: 50%;
+}
+
+.gameCard h3 {
+    font-size: 1.5em;
+    color: #044183;
+    margin-bottom: 10px;
+}
+
+.gameCard p {
+    font-size: 1em;
+    color: #fff;
+    line-height: 1.6;
+}
+
+.gameCard1{
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 20px;
+    text-align: left;
+    transition: transform 0.3s;
+    position: absolute;
+
 }
