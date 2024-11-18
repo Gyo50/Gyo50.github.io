@@ -26,6 +26,7 @@ header {
 }
 .manuBar .logo a{
     height: 100px;
+    margin: 0 20px;
 }
 .manuBar {
     background-color: #000;
@@ -50,13 +51,110 @@ header {
     
 }
 
-.manuBar .global{
-    line-height: 100px;
-    background-image: url(../);
+.manuBar .logo{
+    padding: 15px 0;
 }
 
-.manuBar .logo img {
+/* -------------------------- global--------------------------- */
+.manuBar .global{
+    line-height: 120px;
+    margin: 0 20px;
+}
+.manuBar .global li a{
+    line-height: 100px;
+    display: block;
+}
+.manuBar .global img{
+    height: 30px;
+    width: 30px;
+}
+.arr {
+    width: 13px; /* 사이즈 */
+    height: 13px; /* 사이즈 */
+    border-top: 2px solid #fff; /* 선 두께 */
+    border-right: 2px solid #fff; /* 선 두께 */
+    display: inline-block;
+    transform: rotate(135deg); /* 각도 */
+ /* 기본 0px 값으로 해주세요 */
+    margin: 10px;
+}
+/*------------------------dropdown----------------------*/
+.manuList li{
+    position: relative;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100%;
+    left: -55px;
+    display: none;
+    background-color: #222;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 9999;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.dropdown-3 {
+    position: absolute;
+    top: 100%;
+    left: -55px;
+    display: none;
+    background-color: #222;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 9999;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.dropdown1 {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    /* display: none; */
+    background-color: #222;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    z-index: 9999;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+.dropdown li, .dropdown-3 li, .dropdown1 li  {
+    width: 150px;
+    text-align: center;
+}
+
+.dropdown li a ,.dropdown1 li a{
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s;
     height: 100px;
+}
+
+.dropdown li a:hover, .dropdown1 li a:hover {
+    background-color: #444;
+}
+
+
+/* 마우스 올렸을 때 드롭다운 표시 */
+.manuList li:hover .dropdown, .global:hover .dropdown1 {
+    display: block;
+}
+
+
+.dropdown, .dropdown1 {
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.3s, transform 0.3s;
+}
+
+.manuList li:hover .dropdown, .global:hover .dropdown1 {
+    opacity: 1;
+    transform: translateY(0);
 }
 
 /* ------------------------처음 화면 -------------------*/
@@ -74,14 +172,14 @@ header {
 
 .logo .frontlogo{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -450px;
+    left: 250px;
     z-index: 3;
 }
 .logo .backlogo{
     position: absolute;
-    top: 0;
-    left: 0;
+    top: -450px;
+    left: 250px;
     z-index: 1;
 }
 
