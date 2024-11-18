@@ -396,3 +396,7 @@ header {
 .news .news-title {
     color: #fff;
 }
+.news .news-line{
+    background: linear-gradient(to right, blue, green);
+    height: 10px;
+}
