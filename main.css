@@ -66,9 +66,23 @@ header {
     align-items: center;
     height: calc(100vh - 80px);
     text-align: center;
-    background-image: url(/mainimg/);
-    background-repeat: no-repeat;
-    background-size: cover;
+
+}
+.content-main .logo{
+    position: relative;
+}
+
+.logo .frontlogo{
+    position: absolute;
+    top: -300px;
+    left: 257px;
+    z-index: 3;
+}
+.logo .backlogo{
+    position: absolute;
+    top: -457px;
+    left: 260px;
+    z-index: 1;
 }
 
 .text-main {
@@ -76,15 +90,19 @@ header {
 }
 
 .text-main h2{
+    position: relative;
     height: 100px;
     font-size: 6.5em;
     color: #fff;
+    z-index: 2;
 }
 
 .text-main h1 {
+    position: relative;
     font-size: 9em;
     color: #fff;
     margin-bottom: 20px;
+    z-index: 2;
 }
 
 .text-main p {
@@ -372,4 +390,9 @@ header {
     position: absolute;
     top: 175px;
     left: -85px;
+}
+
+/* --------------------------------------------- */
+.news .news-title {
+    color: #fff;
 }
