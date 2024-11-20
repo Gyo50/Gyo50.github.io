@@ -4,7 +4,7 @@
 }
 
 body {
-    background-color: #101010;
+    background-color: #000;
     color: #fff;
 }
 
@@ -406,8 +406,8 @@ header {
 .v4-card-back p{
     width: 300px; 
     height: 280px;
-    background-color: white;
-    color: blue;
+    background-color: #46423f;
+    color: #fff;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -421,8 +421,8 @@ header {
 .sud-card-back p{
     width: 336.5px; 
     height: 336.5px;
-    background-color: white;
-    color: blue;
+    background-color: #110f10;
+    color: #fff;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -436,8 +436,8 @@ header {
 .blue-card-back p{
     width: 285px; 
     height: 285px;
-    background-color: white;
-    color: blue;
+    background-color: #0e3060;
+    color: #fff;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -452,8 +452,8 @@ header {
 .hit2-card-back p{
     width: 296px; 
     height: 240px;
-    background-color: white;
-    color: blue;
+    background-color: #4f1052;
+    color: #fff;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -576,6 +576,9 @@ header {
 .recruit .recruit-list p{
     margin: 15px;
 }
+.recruit .recruit-list .answer{
+    color: #4d4d4d;
+}
 .casebox{
     position: absolute;
     top: 420px;
@@ -656,7 +659,7 @@ header {
 .foot .sitebox{
     width: 170px;
     height: 50px;
-    background-color: #222;
+    background-color: #333333;
     position: absolute;
     top: -5px;
     right: 350px;
