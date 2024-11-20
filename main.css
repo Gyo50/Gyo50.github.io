@@ -150,7 +150,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 80px);
+    height: calc(100vh - -135px);
     text-align: center;
 
 }
@@ -210,10 +210,14 @@ header {
     margin: 0 auto;
 }
 
-.content-intro p {
+.content-intro h1 {
     font-size: 2em;
-    color: #333;
+    color: #fff;
     margin-bottom: 20px;
+    text-align: left;
+}
+.content-intro p{
+    text-align: left;
 }
 
 .intro-gird {
@@ -624,7 +628,7 @@ header {
 }
 .foot{
     position: relative;
-    height: 300px;
+    height: 100px;
 }
 .logobox{
     text-align: center;
@@ -654,7 +658,7 @@ header {
     height: 50px;
     background-color: #222;
     position: absolute;
-    top: 175px;
+    top: -5px;
     right: 350px;
     display: flex;
     justify-content: space-around;
