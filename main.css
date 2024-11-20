@@ -59,6 +59,7 @@ header {
 .manuBar .global{
     line-height: 120px;
     margin: 0 20px;
+    cursor: pointer;
 }
 .manuBar .global li a{
     line-height: 100px;
@@ -595,6 +596,7 @@ header {
     align-items: center;  
     text-align: left;
     margin-top: 60px;
+    cursor: pointer;
 }
 .viewcase .view-scr{
     width: 30px;
@@ -650,7 +652,7 @@ header {
     transform: translateX(-190px);
 }
 .foot .footer-intro p{
-    color: #4d4d4d;
+    color: #595959;
 }
 .foot .footer-intro span{
     font-weight: bold;
@@ -666,6 +668,7 @@ header {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    cursor: pointer;
 }
 .siteplus {
     position: relative;
