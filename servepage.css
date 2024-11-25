@@ -319,8 +319,6 @@ header {
     transform: rotate(45deg);
 }
 
-.interviwee-silde .silde-num{}
-
 .interviwee-silde .interviwee-peolpe{
     position: absolute;
     top: -400px;
