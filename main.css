@@ -25,7 +25,7 @@ section {
 }
 
 .wrapper {
-    max-width:1200px;
+    width:1140px;
     padding:0 60px;
     margin: 0 auto;
 }
@@ -231,7 +231,7 @@ header {
 }
 
 .company-intro {
-    max-width: 800px;
+    width: 1140px;
     margin: 0 auto;
 }
 
@@ -292,7 +292,7 @@ header {
 }
 
 .game-intro {
-    width: 800px;
+    width: 1140px;
     margin: 0 auto;
     height: 1070px;
     position: absolute;
@@ -304,11 +304,11 @@ header {
 
 .content-game h1 {
     width: 1000px;
-    font-size: 6.5em;
+    font-size: 7.5em;
     color: #fff;
 }
 .content-game p {
-    font-size: 25px;
+    font-size: 28px;
     color: #fff;
 }
 
@@ -319,8 +319,8 @@ header {
     margin: 50px auto;
     cursor: pointer;
     position: absolute;
-    top: 185px;
-    left: 0px;
+    top: 195px;
+    left: 15px;
 }
 .sud-card {
     width: 374px; 
@@ -329,8 +329,8 @@ header {
     margin: 50px auto;
     cursor: pointer;
     position: absolute;
-    top: 65px;
-    right: -220px;
+    top: 75px;
+    right: -15px;
     z-index: 2;
 }
 .blue-card {
@@ -341,7 +341,7 @@ header {
     cursor: pointer;
     position: absolute;
     top: 585px;
-    right: -100px;
+    right: 80px;
 }
 .hit2-card {
     width: 245px; 
@@ -351,7 +351,7 @@ header {
     cursor: pointer;
     position: absolute;
     top: 720px;
-    right: 420px;
+    left: 280px;
 }
 
 .v4-card-inner,
@@ -523,7 +523,7 @@ header {
     color: #fff;
 }
 .news-title {
-    width: 800px;
+    width: 1140px;
     text-align: left;
 }
 .new-title1 h2{
@@ -652,7 +652,7 @@ header {
 }
 .allfooter{
     margin: 0 auto;
-    width: 800px;
+    width: 1140px;
     position: relative;
 }
 
@@ -679,7 +679,7 @@ header {
     background-color: #333333;
     position: absolute;
     top: -10px;
-    right: -290px;
+    right: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
