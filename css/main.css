@@ -184,7 +184,7 @@ header {
     top:0;
     left:50%;
     transform: translateX(-50%);
-    z-index: 2;
+    z-index: 5;
 }
 .logo .backlogo{
     position: absolute;
@@ -197,7 +197,6 @@ header {
 .text-main {
     flex-direction: column;
     max-width: 1260px;
-    transform: translateY(-100px);
 }
 
 .text-main h2{
@@ -205,7 +204,7 @@ header {
     height: 100px;
     font-size: 6.5em;
     color: #fff;
-    z-index: 30;
+    z-index: 3;
 }
 
 .text-main h1 {
