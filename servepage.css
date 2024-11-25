@@ -494,7 +494,7 @@ header {
 }
 .allfooter{
     margin: 0 auto;
-    width: 800px;
+    width: 1140px;
     position: relative;
 }
 
@@ -521,7 +521,7 @@ header {
     background-color: #333333;
     position: absolute;
     top: -10px;
-    right: -290px;
+    right: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
