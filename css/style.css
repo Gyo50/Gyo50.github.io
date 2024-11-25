@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'NEXON Lv2 Gothic';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+* {
+    font-family: 'NEXON Lv2 Gothic' !important;
+    font-weight: 300;
+    line-height: 1.2;
+}
+
+
+
+.pc {display:block;}
+.mobile {display:none;}
+
+@media (max-width:768px) {
+    .pc {display:none;}
+    .mobile {display:block;}
+}
