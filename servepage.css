@@ -328,8 +328,10 @@ header {
 
 /* --------------------------------------------- */
 .perks{
-    margin-top: 200px;
     flex-direction: column;
+    background-color: #111111;
+    padding-top: 200px;
+    padding-bottom: 200px;
 }
 .perks .perks-title {
     color: #fff;
