@@ -29,6 +29,9 @@ section {
     padding:0 60px;
     margin: 0 auto;
 }
+.start{
+    width: 100%;
+}
 
 /* -------------------------- 머리 ---------------------*/
 header {
