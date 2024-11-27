@@ -244,13 +244,18 @@ header {
 .content-intro h1 {
     font-size: 2.3em;
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
     text-align: left;
+    font-weight: 700;
 }
 .content-intro p{
     text-align: left;
+    margin-top: 30px;
 }
 
+.company-intro-p{
+    font-size: 25px;
+}
 .intro-gird {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -260,20 +265,21 @@ header {
 
 
 .intro {
-    padding: 20px;
+    padding: 20px 0;
     border-radius: 8px;
     text-align: left;
 }
 
 .intro h3 {
     font-size: 1.5em;
-    color: #007bff;
-    margin-bottom: 10px;
+    color: #fff;
+    margin-bottom: 20px;
+    margin-top: 30px;
 }
 
 .intro p {
     font-size: 1em;
-    color: #555;
+    color: #fff;
     line-height: 1.6;
 }
 
@@ -309,9 +315,9 @@ header {
 }
 
 .content-game h1 {
-    width: 1000px;
     font-size: 7.5em;
     color: #fff;
+    font-weight: 700;
 }
 .content-game p {
     font-size: 28px;
@@ -536,7 +542,10 @@ header {
 .new-title1 h2{
     text-align: left; 
     font-size: 45px;
-    margin-bottom: 20px;
+    font-weight: 700;
+}
+.new-title1-h2{
+    margin: 10px 0 30px 0;
 }
 .new-title1 p{
     text-align: left;
@@ -709,15 +718,50 @@ header {
     height: 2px; 
     background-color: #fff;
   }
+/*--------------------미디어------------------*/
 
 
-
-  @media (max-width:980px) {
+/* @media (max-width:980px) {
     .content-intro h1 {font-size:24px;}
-}
+} */
 
+@media screen and (max-width:768px) {
+    .manuList{
+        display: flex;
+        flex-direction: column;
+    }
+    .manuList li{
+        display: none;
+    }
+    .logo .frontlogo{
+        width: 500px;
+    }
+    .logo .backlogo{
+        width: 500px;
+    }
+    .text-main h2{
+        font-size: 3.6em;
+    }
+    .text-main h1{
+        font-size: 5em;
+    }
+    .text-main p{
+        white-space: pre-line;
+    }
+    .intro-gird{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .content-intro h1{
+        font-size: 2.1em;
 
-
-  @media (max-width:768px) {
-    .content-intro h1 {font-size:24px;}
+    }
+    .game-intro{
+        width: 100%;
+    }
+    .game-intro-p{
+        margin-bottom: 300px;
+    }
+    .news-line{
+        display: flex;
+    }
 }
