@@ -19,8 +19,6 @@
 @media (max-width:768px) {
     .pc {display:none;}
     .mobile {display:block;}
+
 }
 
-@media (max-width:768px){
-    .manuList{display: none;}
-}

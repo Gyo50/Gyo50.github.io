@@ -175,7 +175,7 @@ header {
     text-align: center;
     position: relative;
     width:100%;
-
+    padding-top:100px;
 }
 .content-main .logo{
     position: absolute;
@@ -200,6 +200,7 @@ header {
 .text-main {
     flex-direction: column;
     max-width: 1260px;
+    height: 100%;
 }
 
 .text-main h2{
@@ -208,6 +209,7 @@ header {
     font-size: 6.5em;
     color: #fff;
     z-index: 3;
+    font-weight: 700;
 }
 
 .text-main h1 {
@@ -215,14 +217,16 @@ header {
     font-size: 9em;
     color: #fff;
     margin-bottom: 20px;
+    font-weight: 700;
     z-index: 3;
+    
 }
 
 .text-main p {
     font-size: 1.6em;
     color: #fff;
-    margin-bottom: 20px;
     line-height: 1.6;
+    z-index: 3;
 }
 
 /* ---------------------------소개 ---------------------*/
@@ -520,6 +524,7 @@ header {
     height: 1100px;
     margin-top: 200px;
     flex-direction: column;
+    overflow: hidden;
 }
 .news .news-title {
     color: #fff;
@@ -704,3 +709,15 @@ header {
     height: 2px; 
     background-color: #fff;
   }
+
+
+
+  @media (max-width:980px) {
+    .content-intro h1 {font-size:24px;}
+}
+
+
+
+  @media (max-width:768px) {
+    .content-intro h1 {font-size:24px;}
+}
