@@ -73,6 +73,13 @@ header {
 .manuBar .logo{
     padding: 15px 0;
 }
+.menu-toggle{
+    display: none;
+    cursor: pointer;
+    width: 50px;
+    line-height: 100px;
+    font-size: 40px;
+}
 
 /* -------------------------- global--------------------------- */
 .manuBar .global{
@@ -746,6 +753,12 @@ header {
     }
     .manuBar .manuList{
         display: none;
+    }
+    .manuBar .global{
+        display: none;
+    }
+    .manuBar .menu-toggle{
+        display: block;
     }
     .logo .frontlogo{
         width: 500px;
