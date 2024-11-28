@@ -622,7 +622,7 @@ header {
     .intro h3{
         font-size: 32px;
     }
-    ..content-intro{
+    .content-intro{
         margin-bottom: 100px;
     }
     .content-intro h1{
