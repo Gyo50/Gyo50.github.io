@@ -44,7 +44,7 @@ header {
 .manuBar .logo a{
     height: 100px;
     margin: 0 20px;
-    
+
 }
 .manuBar {
     background-color: #000;
@@ -58,6 +58,8 @@ header {
 .manuBar .manuList li a{
     line-height: 100px;
     display: block;
+    font-size: 18px;
+    color: #fff;
 }
 
 .manuBar .manuList {
@@ -186,14 +188,14 @@ header {
 
 .logo .frontlogo{
     position: absolute;
-    top:0;
+    top:10px;
     left:50%;
     transform: translateX(-50%);
     z-index: 5;
 }
 .logo .backlogo{
     position: absolute;
-    top:0;
+    top:10px;
     left:50%;
     transform: translateX(-50%);
     z-index: 1;
@@ -208,7 +210,7 @@ header {
 .text-main h2{
     position: relative;
     height: 100px;
-    font-size: 6.5em;
+    font-size: 100px;
     color: #fff;
     z-index: 3;
     font-weight: 700;
@@ -216,7 +218,7 @@ header {
 
 .text-main h1 {
     position: relative;
-    font-size: 9em;
+    font-size: 140px;
     color: #fff;
     margin-bottom: 20px;
     font-weight: 700;
@@ -225,38 +227,42 @@ header {
 }
 
 .text-main p {
-    font-size: 1.6em;
+    font-size: 30px;
     color: #fff;
     line-height: 1.6;
-    z-index: 3;
+    z-index: 5;
 }
 
 /* ---------------------------소개 ---------------------*/
 .content-intro {
     margin: 50px 0;
     text-align: center;
-    height: 1500px;
+    height: 1200px;
 }
 
 .company-intro {
-    width: 1140px;
+    width: 1200px;
     margin: 0 auto;
 }
 
 .content-intro h1 {
-    font-size: 2.3em;
+    font-size: 50px;
     color: #fff;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     text-align: left;
     font-weight: 700;
+    
 }
 .content-intro p{
     text-align: left;
     margin-top: 30px;
 }
-
+.company-intro-h1{
+    margin-bottom: 40px;
+}
 .company-intro-p{
-    font-size: 25px;
+    font-size: 30px;
+    margin-bottom: 130px;
 }
 .intro-gird {
     display: grid;
@@ -301,13 +307,13 @@ header {
     background-image: url(/mainimg/2background.png);
     background-position: center;
     background-size: cover;
-    height: 1500px;
+    height: 1700px;
     position: relative;
     padding: 200px 0;
 }
 
 .game-intro {
-    width: 1140px;
+    width: 1200px;
     margin: 0 auto;
     height: 1070px;
     position: absolute;
@@ -531,7 +537,7 @@ header {
 
 /* --------------------------------------------- */
 .news{
-    height: 1100px;
+    height: 1230px;
     margin-top: 200px;
     flex-direction: column;
     overflow: hidden;
@@ -540,20 +546,21 @@ header {
     color: #fff;
 }
 .news-title {
-    width: 1140px;
+    width: 1200px;
     text-align: left;
 }
 .new-title1 h2{
     text-align: left; 
-    font-size: 45px;
+    font-size: 50px;
     font-weight: 700;
 }
 .new-title1-h2{
-    margin: 10px 0 30px 0;
+    margin: 20px 0 35px 0;
 }
 .new-title1 p{
     text-align: left;
-    font-size: 23px;
+    font-size: 30px;
+    margin-bottom: 95px;
 }
 
 .news .news-line{
@@ -572,39 +579,40 @@ header {
 }
 
 .news-line .new-years{
-    margin-top: 50px;
-    margin-bottom: 25px;
-    font-size: 30px;
+    margin-top: 70px;
+    margin-bottom: 30px;
+    font-size: 20px;
     font-weight: bold;
 }
 .news-line .news-name{
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 .newimg p{
-    font-size: 13px;
-    font-weight: bold;
+    font-size: 16px;
 }
 /*------------------------ 채용 ---------------------*/
 .recruit{
-    height: 1100px;
+    height: 1230px;
     margin-top: 200px;
     position: relative;
 }
-
+.recruit-title{
+    width: 1200px;
+}
 .title1{
     width: 805px;
 }
 .title1 h1{
     text-align: left;
-    font-size: 100px;
-    margin-bottom: 30px;
+    font-size: 120px;
+    margin-bottom: 50px;
     font-weight: 700;
 }
 
 .title1 p{
     text-align: left;
     font-size: 23px;
-    margin-bottom: 60px;
+    margin-bottom: 100px;
 }
 
 .recruit .recruit-list{
@@ -615,7 +623,8 @@ header {
 }
 
 .recruit .recruit-list p{
-    margin: 30px 30px 30px 0;
+    margin: 15px 15px 15px 0;
+    font-size: 20px;
 }
 .recruit .recruit-list .answer{
     color: #4d4d4d;
@@ -670,12 +679,12 @@ header {
 }
 .foot{
     position: relative;
-    height: 150px;
 }
 .allfooter{
     margin: 0 auto;
-    width: 1140px;
+    width: 1200px;
     position: relative;
+    height: 285px;
 }
 
 .logobox{
@@ -683,7 +692,7 @@ header {
 }
 .logobox img{
     margin-top: 50px;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
     aspect-ratio: auto 73 /23;
 }
 .foot .footer-intro{ 
@@ -698,7 +707,7 @@ header {
 }
 .foot .footer-intro .intro-margin{
     display: block;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
 }
 .foot .sitebox{
     width: 170px;

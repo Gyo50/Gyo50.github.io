@@ -54,6 +54,8 @@ header {
 .manuBar .manuList li a{
     line-height: 100px;
     display: block;
+    font-size: 18px;
+    color: #fff;
 }
 
 .manuBar .manuList {
@@ -168,7 +170,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: calc(100vh - 100px);
+    height: 980px;
     text-align: center;
     width:100%;
     background-image: url(/serveimg/company.png);
@@ -180,21 +182,21 @@ header {
 .content-main .text-main {
     position: relative;
     flex-direction: column;
-    max-width: 1260px;
+    width: 1260px;
     z-index:1;
 }
 
 .content-main .text-main h1 {
     position: relative;
-    font-size: 7.5rem;
+    font-size: 120px;
     color: #fff;
-    margin-bottom: 20px;
+    margin-bottom: 55px;
     z-index: 3;
     font-weight: 900;
 }
 
 .text-main p {
-    font-size: 1.6em;
+    font-size: 35px;
     color: #fff;
     line-height: 1.6;
     font-weight: 300;
@@ -202,13 +204,13 @@ header {
 
 /* ---------------------------소개 ---------------------*/
 .content-intro {
-    padding: 200px 0;
     text-align: center;
     background-color: #fff;
+    height: 2150px;
 }
 
 .company-intro {
-    width: 1140px;
+    width: 1200px;
     margin: 0 auto;
 }
 
@@ -233,18 +235,20 @@ header {
 }
 
 .intro h3 {
-    font-size: 1.5em;
+    font-size: 25px;
     color: #000;
     margin-bottom: 10px;
+    font-weight: 700;
 }
 
 .intro .intro-en{
     font-size: 1.5em;
+    color: #7b7b7b;
 }
 
 .intro p {
-    font-size: 1em;
-    color: #555;
+    font-size: 18px;
+    color: #000;
     line-height: 1.6;
     padding-bottom: 50px;
 }
@@ -262,16 +266,15 @@ header {
 
 /*------------------------ 게임 소개------------------*/
 .content-interviwee {
-    padding-top: 200px;
     text-align: center;
     position: relative;
     padding-bottom: 200px;
+    height: 1166px;
 }
 
 .interviwee-intro {
-    width: 1140px;
+    width: 1200px;
     margin: 0 auto;
-    height: 1070px;
     text-align: left;
 }
 .content-interviwee .interviwee{
@@ -333,19 +336,19 @@ header {
 /* --------------------------------------------- */
 .perks{
     flex-direction: column;
-    background-color: #111111;
-    padding-top: 200px;
-    padding-bottom: 150px;
+    background-color:#222;
+    padding-bottom: 210px;
+    height: 2300px;
 }
 .perks .perks-title {
     color: #fff;
-    width: 1140px;
+    width: 1200px;
 }
 .perks-title hr{
     margin: 100px 0;
 }
 .perks-title1{
-    padding-bottom: 50px;
+    padding-bottom: 115px;
 }
 
 .perks-title {
@@ -353,14 +356,15 @@ header {
     text-align: left;
 }
 .perks-title1 h1{
-    font-size: 2.5em;
+    font-size: 50px;
     margin-bottom: 20px;
 }
 
 .perks-support h3,
 .perks-health h3,
 .perks-growth h3{
-    font-size: 2.5em;
+    font-size: 40px;
+    margin-bottom: 20px;
 }
 
 .perks-support p,
@@ -382,10 +386,14 @@ header {
 .support-img div,
 .health-img div,
 .growth-img div{
-    padding: 50px;
+    margin: 100px 50px 90px 50px;
 }
 
-
+.support-img p,
+.health-img p,
+.growth-img p{
+    margin-top: 25px;
+}
 
 /*------------------------ 채용 ---------------------*/
 .process{
@@ -395,18 +403,22 @@ header {
 
 .title1 h1{
     text-align: left;
-    font-size: 2.5em;
-    margin-bottom: 100px;
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+.title1-h1{
+    margin-bottom: 125px;
 }
 .process .recruit-title{
-    width: 1140px;
+    width: 1200px;
     position: relative;
 }
 
 .title1 p{
     text-align: left;
     font-size: 23px;
-    margin-bottom: 60px;
+    margin-bottom: 15px;
 }
 
 .process-line{
@@ -415,7 +427,7 @@ header {
     align-items: center;
     background: linear-gradient(to right, blue, green);
     height: 5px;
-    margin-top: 150px;
+    margin-top: 160px;
     width: 100%;
 }
 
@@ -432,10 +444,11 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .last-p{
-    margin-top: 100px;
+    margin-top: 150px;
 }
 
 .casebox{
@@ -493,20 +506,21 @@ header {
 /*------------------------------------------------*/
 .foot{
     position: relative;
-    height: 100px;
 }
 .allfooter{
     margin: 0 auto;
-    width: 1140px;
+    width: 1200px;
     position: relative;
+    height: 285px;
 }
 
 .logobox{
     text-align: left;
 }
 .logobox img{
-    margin-top: 60px;
-    margin-bottom: 40px;
+    margin-top: 50px;
+    margin-bottom: 45px;
+    aspect-ratio: auto 73 /23;
 }
 .foot .footer-intro{ 
     text-align: left;
@@ -514,9 +528,13 @@ header {
 .foot .footer-intro p{
     color: #595959;
 }
-.foot .footer-intro span{
+.foot .footer-intro .intro-bold{
     font-weight: bold;
     color: #fff;
+}
+.foot .footer-intro .intro-margin{
+    display: block;
+    margin-bottom: 15px;
 }
 .foot .sitebox{
     width: 170px;
