@@ -219,6 +219,7 @@ header {
     color: #000;
     margin-bottom: 20px;
     text-align: left;
+    font-weight: 700;
 }
 
 .intro-gird {
@@ -281,10 +282,10 @@ header {
     padding-bottom: 50px;
 }
 .content-interviwee h1 {
-    width: 1000px;
-    font-size: 3em;
+    font-size: 50px;
     color: #fff;
     padding-bottom: 250px;
+    font-weight: 700;
 }
 .content-interviwee p {
     font-size: 20px;
@@ -292,10 +293,14 @@ header {
 }
 
 .content-interviwee .interviwee-title{
-    font-size: 25px;
+    font-size: 30px;
     color: #fff;
     padding-bottom: 50px;
 }
+.interviwee .interviwee-p{
+    margin-bottom: 15px;
+}
+
 .content-interviwee .interviwee-silde {
     display: flex;
     justify-content: flex-start;
@@ -328,8 +333,8 @@ header {
 
 .interviwee-silde .interviwee-peolpe{
     position: absolute;
-    top: -400px;
-    right: 0;
+    top: -500px;
+    right: 100px;
 }
 
 
@@ -337,15 +342,16 @@ header {
 .perks{
     flex-direction: column;
     background-color:#222;
-    padding-bottom: 210px;
+    padding: 210px 0;
     height: 2300px;
 }
 .perks .perks-title {
     color: #fff;
     width: 1200px;
+    font-weight: 700;
 }
 .perks-title hr{
-    margin: 100px 0;
+    margin: 90px 0;
 }
 .perks-title1{
     padding-bottom: 115px;
@@ -386,7 +392,7 @@ header {
 .support-img div,
 .health-img div,
 .growth-img div{
-    margin: 100px 50px 90px 50px;
+    margin: 100px 164px 0 164px;
 }
 
 .support-img p,
