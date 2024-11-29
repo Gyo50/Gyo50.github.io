@@ -290,7 +290,7 @@ header {
 .content-interviwee h1 {
     font-size: 50px;
     color: #fff;
-    padding-bottom: 250px;
+    margin-bottom: 250px;
     font-weight: 700;
 }
 .content-interviwee p {
@@ -367,11 +367,18 @@ header {
     width: 800px;
     text-align: left;
 }
+.tilte-span{
+    display: block;
+    margin-bottom: 20px;
+}
 .perks-title1 h1{
     font-size: 50px;
     margin-bottom: 20px;
 }
-
+.title-span{
+    margin-bottom: 20px;
+    display: block;
+}
 .perks-support h3,
 .perks-health h3,
 .perks-growth h3{
@@ -581,7 +588,9 @@ header {
 
 @media screen and (max-width:768px) {
     .content-main{
-        height: 660px;
+        height: 1155px;
+        background-position: center;
+        background-size: cover;
     }
     .manuBar .manuList{
         display: none;
@@ -604,96 +613,82 @@ header {
     .text-main h2{
         font-size: 60px;
     }
-    .text-main h1{
-        font-size: 80px;
+    .content-main .text-main h1{
+        font-size: 85px;
+        margin-bottom: 70px;
     }
     .text-main p{
         white-space: pre-line;
-    }
-    .company-intro{
-        height: 1420px;
+        font-size: 48px;
     }
     .intro-gird{
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(1, 1fr);
     }
     .intro p{
         font-size: 24px;
+        white-space: pre-line;
+        padding: 0;
     }
     .intro h3{
         font-size: 32px;
+        white-space: pre-line;
+    }
+    .intro .intro-en{
+        font-size: 32px;
+        padding: 0;
+        margin-top: 40px;
+        margin-bottom: 45px;
     }
     .content-intro{
-        margin-bottom: 100px;
+        height: 100%;
+        padding-top: 160px;
+        padding-bottom: 160px;
     }
     .content-intro h1{
-        font-size: 2.1em;
-        
+        font-size: 46px;
     }
-    .game-intro{
-        width: 650px;
-        padding:0;
+    .intro .intro-img{
+        width: 70px;
+        height: 125px;
+        margin: 120px 0 40px 0
     }
-    .game-intro-text{
-        top: -130px;
+    .content-interviwee{
+        height: 100%;
+        margin-top: 160px;
+    }
+    .content-interviwee h1{
+        font-size: 70px;
+        margin-bottom: 810px;
+    }
+    .interviwee-intro{
+        height: 1570px;
+    }
+    .interviwee-silde .interviwee-peolpe{
         position: absolute;
-        left: 0;
+        top: -1000px;
+        right: 50px;
     }
-    .content-game{
-        margin-top: 200px;
-        height: 1300px;
-        background-size: 170% 50%;
-        background-repeat: no-repeat;
-        padding: 0;
+    .content-interviwee .interviwee-title{
+        font-size: 32px;
     }
-    .content-game h1{
-        font-size: 5em;
+    .interviwee .interviwee-p{
+        font-size: 24px;
     }
-    .game-intro-p{
-        margin-bottom: 300px;
+    .perks .perks-title{
+        width: 581px;
     }
-    .news-line{
-        display: flex;
+    .perks-title1 h1{
+        font-size: 46px;
+        white-space: pre-line;
     }
-    .game-intro .v4-card{
-        width: 200px;
+    .title-span{
+        display: block;
     }
-    .v4-card .v4-logo{
-        aspect-ratio: auto 1 / 1;
-        width: 120px;
-        position: absolute;
-        top: 15px;
-        left: 155px;
-    }
-    .v4-card-back{
-        height: 50%;
-    }
-    .news{
-        margin: 0;
-        height: 1530px;
-    }
-    .news .news-line{
-        justify-content: flex-start;
-    }
-    .title1{
-        width: 530px;
-    }
-    .title1 h1{
-        font-size: 5em;
-    }
-    .title1 p{
-        font-size: 27px;
+    .title-span2{
+        display: block;
+        margin-bottom: 20px;
     }
 
-    .viewcase .nexonlogo{
-        display: none;
-    }
-    .recruit{
-        margin: 0;
-        height: 825px;
-    }
-    .recruit .recruit-list li p{
-        font-size: 20px;
-    }
     .allfooter{
         width: 580px;
         margin: 0px;
