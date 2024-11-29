@@ -734,7 +734,7 @@ header {
     margin-top: 0;
   }
   .swiper .swiper-pagination{
-    bottom: 0;
+    top: 595px !important;
   }
 /*------------------------ 채용 ---------------------*/
 .recruit {
