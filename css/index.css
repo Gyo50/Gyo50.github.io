@@ -885,7 +885,7 @@ header {
         position: absolute;
         top: 0;
         left: 0;
-        background:#ffffff;
+        background:#fff;
         width: 100%;
         /* display: flex; */
         flex-wrap: wrap;
