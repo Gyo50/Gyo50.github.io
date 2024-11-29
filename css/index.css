@@ -96,7 +96,6 @@ header {
     width: 100%;
     height: 5px;
     background: #fff;
-    transition: all 0.3s;
 }
 
 .menu-toggle span {
@@ -110,33 +109,24 @@ header {
 
 .menu-toggle span:before {
     top: -15px;
-
 }
 
 .menu-toggle span:after {
     top: 15px;
-
 }
-
-/*hover*/
-.menu-toggle:hover>span {
-    background: transparent;
+.close {
+    display: none;
+    position:relative;
+    float:left;
+    display:inline;
+    height:85px;
+    text-align:center;
 }
-
-.menu-toggle:hover>span:before {
-    top: 0;
-    transform: rotate(45deg);
-    background: #000;
-
+.close:after {
+    content: "\00d7"; 
+    font-size:50pt;
+    line-height:35px;
 }
-
-.menu-toggle:hover>span:after {
-    top: 0;
-    transform: rotate(-45deg);
-    background: #000;
-
-}
-
 /* -------------------------- global--------------------------- */
 .manuBar .global {
     line-height: 120px;
@@ -879,7 +869,7 @@ header {
     }
 
     .manuBar .manuList {
-        /* display: none; */
+        display: none;
         flex-direction: column;
         padding-top: 100px;
         position: absolute;
