@@ -879,13 +879,13 @@ header {
     }
 
     .manuBar .manuList {
-        display: none;
+        /* display: none; */
         flex-direction: column;
         padding-top: 100px;
         position: absolute;
         top: 0;
         left: 0;
-        background: #fff;
+        background:#ffffff;
         width: 100%;
         /* display: flex; */
         flex-wrap: wrap;
@@ -1086,7 +1086,7 @@ header {
     .manuList .media-global {
         display: flex;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         color: #cccccc;
         margin-bottom: 80px;
         margin-top: 235px;
