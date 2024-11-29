@@ -17,7 +17,7 @@ li {
 }
 
 section {
-    width:100%;
+    width: 100%;
     position: relative;
     display: flex;
     justify-content: center;
@@ -25,11 +25,12 @@ section {
 }
 
 .wrapper {
-    width:1140px;
-    padding:0 60px;
+    width: 1140px;
+    padding: 0 60px;
     margin: 0 auto;
 }
-.start{
+
+.start {
     width: 100%;
 }
 
@@ -39,13 +40,15 @@ header {
     top: 0;
     z-index: 99999998;
     position: relative;
-    
+
 }
-.manuBar .logo a{
+
+.manuBar .logo a {
     height: 100px;
     margin: 0 20px;
 
 }
+
 .manuBar {
     background-color: #000;
     display: flex;
@@ -55,7 +58,8 @@ header {
     position: fixed;
     height: 100px;
 }
-.manuBar .manuList li a{
+
+.manuBar .manuList li a {
     line-height: 100px;
     display: block;
     font-size: 18px;
@@ -70,47 +74,112 @@ header {
     justify-content: center;
 }
 
-.manuBar .logo{
+.manuBar .logo {
     padding: 15px 0;
 }
-.menu-toggle{
+
+/*-------------toggle------------*/
+.menu-toggle {
+    position: relative;
     display: none;
+    width: 40px;
+    height: 30px;
     cursor: pointer;
-    width: 50px;
-    line-height: 100px;
-    font-size: 40px;
+}
+
+.menu-toggle span,
+.menu-toggle span:before,
+.menu-toggle span:after {
+    display: none;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 5px;
+    background: #fff;
+    transition: all 0.3s;
+}
+
+.menu-toggle span {
+    top: 50%;
+}
+
+.menu-toggle span:before,
+.menu-toggle span:after {
+    content: '';
+}
+
+.menu-toggle span:before {
+    top: -15px;
+
+}
+
+.menu-toggle span:after {
+    top: 15px;
+
+}
+
+/*hover*/
+.menu-toggle:hover>span {
+    background: transparent;
+}
+
+.menu-toggle:hover>span:before {
+    top: 0;
+    transform: rotate(45deg);
+    background: #000;
+
+}
+
+.menu-toggle:hover>span:after {
+    top: 0;
+    transform: rotate(-45deg);
+    background: #000;
+
 }
 
 /* -------------------------- global--------------------------- */
-.manuBar .global{
+.manuBar .global {
     line-height: 120px;
     margin: 0 20px;
     cursor: pointer;
-    width:259px;
+    width: 259px;
     display: flex;
     align-items: center;
     justify-content: flex-end;
 }
-.manuBar .global li a{
+
+.manuBar .global li a {
     line-height: 100px;
     display: block;
 }
-.manuBar .global img{
+
+.manuBar .global img {
     height: 30px;
     width: 30px;
 }
+
 .arr {
-    width: 13px; /* 사이즈 */
-    height: 13px; /* 사이즈 */
-    border-top: 2px solid #fff; /* 선 두께 */
-    border-right: 2px solid #fff; /* 선 두께 */
+    width: 13px;
+    /* 사이즈 */
+    height: 13px;
+    /* 사이즈 */
+    border-top: 2px solid #fff;
+    /* 선 두께 */
+    border-right: 2px solid #fff;
+    /* 선 두께 */
     display: inline-block;
-    transform: rotate(135deg); /* 각도 */
- /* 기본 0px 값으로 해주세요 */
+    transform: rotate(135deg);
+    /* 각도 */
+    /* 기본 0px 값으로 해주세요 */
     margin: 10px;
 }
+
+.media-global {
+    display: none;
+}
+
 /*------------------------dropdown----------------------*/
-.manuList li{
+.manuList li {
     position: relative;
 }
 
@@ -141,12 +210,15 @@ header {
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
-.dropdown li, .dropdown1 li  {
+
+.dropdown li,
+.dropdown1 li {
     width: 150px;
     text-align: center;
 }
 
-.dropdown li a ,.dropdown1 li a{
+.dropdown li a,
+.dropdown1 li a {
     display: block;
     color: #fff;
     text-decoration: none;
@@ -154,24 +226,28 @@ header {
     height: 100px;
 }
 
-.dropdown li a:hover, .dropdown1 li a:hover {
+.dropdown li a:hover,
+.dropdown1 li a:hover {
     background-color: #444;
 }
 
 
 
-.manuList li:hover .dropdown, .global:hover .dropdown1 {
+.manuList li:hover .dropdown,
+.global:hover .dropdown1 {
     display: block;
 }
 
 
-.dropdown, .dropdown1 {
+.dropdown,
+.dropdown1 {
     opacity: 0;
     transform: translateY(-10px);
     transition: opacity 0.3s, transform 0.3s;
 }
 
-.manuList li:hover .dropdown, .global:hover .dropdown1 {
+.manuList li:hover .dropdown,
+.global:hover .dropdown1 {
     opacity: 1;
     transform: translateY(0);
 }
@@ -184,26 +260,28 @@ header {
     height: 980px;
     text-align: center;
     position: relative;
-    width:100%;
-    padding-top:100px;
+    width: 100%;
+    padding-top: 100px;
 }
-.content-main .logo{
+
+.content-main .logo {
     position: absolute;
     top: 100px;
     margin: 30px 0 50px 0;
 }
 
-.logo .frontlogo{
+.logo .frontlogo {
     position: absolute;
-    top:10px;
-    left:50%;
+    top: 10px;
+    left: 50%;
     transform: translateX(-50%);
     z-index: 5;
 }
-.logo .backlogo{
+
+.logo .backlogo {
     position: absolute;
-    top:10px;
-    left:50%;
+    top: 10px;
+    left: 50%;
     transform: translateX(-50%);
     z-index: 1;
 }
@@ -214,7 +292,7 @@ header {
     height: 100%;
 }
 
-.text-main h2{
+.text-main h2 {
     position: relative;
     font-size: 100px;
     color: #fff;
@@ -229,7 +307,7 @@ header {
     margin-bottom: 20px;
     font-weight: 700;
     z-index: 3;
-    
+
 }
 
 .text-main p {
@@ -257,19 +335,23 @@ header {
     margin-bottom: 15px;
     text-align: left;
     font-weight: 700;
-    
+
 }
-.content-intro p{
+
+.content-intro p {
     text-align: left;
     margin-top: 30px;
 }
-.company-intro-h1{
+
+.company-intro-h1 {
     margin-bottom: 40px;
 }
-.company-intro-p{
+
+.company-intro-p {
     font-size: 30px;
     margin-bottom: 130px;
 }
+
 .intro-gird {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -304,7 +386,8 @@ header {
     gap: 20px;
     margin-top: 30px;
 }
-.intro-gird:nth-child(1){
+
+.intro-gird:nth-child(1) {
     background-image: url(./imoge.png);
 }
 
@@ -336,6 +419,7 @@ header {
     font-weight: 700;
     margin-bottom: 30px;
 }
+
 .content-game p {
     font-size: 28px;
     color: #fff;
@@ -344,17 +428,18 @@ header {
 .v4-card {
     aspect-ratio: auto 3 / 4;
     width: 300px;
-    perspective: 1000px; 
+    perspective: 1000px;
     margin: 50px auto;
     cursor: pointer;
     position: absolute;
     top: 195px;
     left: 15px;
 }
+
 .sud-card {
-    width: 374px; 
+    width: 374px;
     height: 420px;
-    perspective: 1000px; 
+    perspective: 1000px;
     margin: 50px auto;
     cursor: pointer;
     position: absolute;
@@ -362,20 +447,22 @@ header {
     right: -15px;
     z-index: 2;
 }
+
 .blue-card {
-    width: 350px; 
+    width: 350px;
     height: 540px;
-    perspective: 1000px; 
+    perspective: 1000px;
     margin: 50px auto;
     cursor: pointer;
     position: absolute;
     top: 585px;
     right: 80px;
 }
+
 .hit2-card {
-    width: 245px; 
+    width: 245px;
     height: 275px;
-    perspective: 1000px; 
+    perspective: 1000px;
     margin: 50px auto;
     cursor: pointer;
     position: absolute;
@@ -386,7 +473,7 @@ header {
 .v4-card-inner,
 .sud-card-inner,
 .blue-card-inner,
-.hit2-card-inner{
+.hit2-card-inner {
     width: 100%;
     height: 100%;
     transition: transform 0.8s;
@@ -398,20 +485,27 @@ header {
     transform: rotateY(180deg);
     z-index: 2;
 }
+
 .sud-card:hover .sud-card-inner {
     transform: rotateY(180deg);
 }
+
 .blue-card:hover .blue-card-inner {
     transform: rotateY(180deg);
 }
+
 .hit2-card:hover .hit2-card-inner {
     transform: rotateY(180deg);
 }
 
-.v4-card-front, .v4-card-back,
-.sud-card-front, .sud-card-back,
-.blue-card-front, .blue-card-back,
-.hit2-card-front, .hit2-card-back{
+.v4-card-front,
+.v4-card-back,
+.sud-card-front,
+.sud-card-back,
+.blue-card-front,
+.blue-card-back,
+.hit2-card-front,
+.hit2-card-back {
     width: 100%;
     height: 100%;
     backface-visibility: hidden;
@@ -423,13 +517,13 @@ header {
 .v4-card-front img,
 .sud-card-front img,
 .blue-card-front img,
-.hit2-card-front img{
+.hit2-card-front img {
     width: 100%;
     height: 100%;
 }
 
 .v4-card-back,
-.hit2-card-back{
+.hit2-card-back {
     transform: rotateY(180deg);
     font-size: 1.5em;
     text-align: center;
@@ -438,7 +532,8 @@ header {
     justify-content: center;
     align-items: flex-end;
 }
-.sud-card-back{
+
+.sud-card-back {
     transform: rotateY(180deg);
     font-size: 1.5em;
     text-align: center;
@@ -448,7 +543,7 @@ header {
     align-items: flex-end;
 }
 
-.blue-card-back{
+.blue-card-back {
     transform: rotateY(180deg);
     font-size: 1.5em;
     text-align: center;
@@ -457,9 +552,10 @@ header {
     justify-content: flex-end;
     align-items: center;
 }
+
 /* ----------------- 뒷면 크기 확인하고 고치기 ---------------- */
-.v4-card-back p{
-    width: 300px; 
+.v4-card-back p {
+    width: 300px;
     height: 280px;
     background-color: #46423f;
     color: #fff;
@@ -473,8 +569,8 @@ header {
     font-size: 1em;
 }
 
-.sud-card-back p{
-    width: 336.5px; 
+.sud-card-back p {
+    width: 336.5px;
     height: 336.5px;
     background-color: #110f10;
     color: #fff;
@@ -488,8 +584,8 @@ header {
     font-size: 1em;
 }
 
-.blue-card-back p{
-    width: 285px; 
+.blue-card-back p {
+    width: 285px;
     height: 285px;
     background-color: #0e3060;
     color: #fff;
@@ -504,8 +600,8 @@ header {
     font-size: 1em;
 }
 
-.hit2-card-back p{
-    width: 296px; 
+.hit2-card-back p {
+    width: 296px;
     height: 240px;
     background-color: #4f1052;
     color: #fff;
@@ -518,59 +614,68 @@ header {
     flex-direction: column;
     font-size: 1em;
 }
+
 /* ----------------------------------------------------- */
-.v4-card .v4-logo{
+.v4-card .v4-logo {
     position: absolute;
     top: 20px;
     left: 230px;
     z-index: 1;
 }
-.sud-card .sud-logo{
+
+.sud-card .sud-logo {
     position: absolute;
     top: 0px;
     left: -145px;
 }
-.blue-card .blue-logo{
+
+.blue-card .blue-logo {
     position: absolute;
     top: 20px;
     left: -60px;
     z-index: 1;
 }
-.hit2-card .hit2-logo{
+
+.hit2-card .hit2-logo {
     position: absolute;
     top: 175px;
     left: -85px;
 }
 
 /* --------------------------------------------- */
-.news{
+.news {
     height: 1230px;
     margin-top: 200px;
     flex-direction: column;
     overflow: hidden;
 }
+
 .news .news-title {
     color: #fff;
 }
+
 .news-title {
     width: 1200px;
     text-align: left;
 }
-.new-title1 h2{
-    text-align: left; 
+
+.new-title1 h2 {
+    text-align: left;
     font-size: 50px;
     font-weight: 700;
 }
-.new-title1-h2{
+
+.new-title1-h2 {
     margin: 20px 0 35px 0;
 }
-.new-title1 p{
+
+.new-title1 p {
     text-align: left;
     font-size: 30px;
     margin-bottom: 95px;
 }
 
-.news .news-line{
+.news .news-line {
     background: linear-gradient(to right, blue, green);
     height: 10px;
     margin-top: 250px;
@@ -580,77 +685,86 @@ header {
     gap: 70px;
     width: 100%;
 }
-.news-line .newimg{
+
+.news-line .newimg {
     width: 350px;
     height: 350px;
 }
 
-.news-line .new-years{
+.news-line .new-years {
     margin-top: 70px;
     margin-bottom: 30px;
     font-size: 20px;
     font-weight: bold;
 }
-.news-line .news-name{
+
+.news-line .news-name {
     margin-bottom: 10px;
 }
-.newimg p{
+
+.newimg p {
     font-size: 16px;
 }
+
 /*------------------------ 채용 ---------------------*/
-.recruit{
+.recruit {
     height: 1230px;
     margin-top: 200px;
     position: relative;
 }
-.recruit-title{
+
+.recruit-title {
     width: 1200px;
 }
-.title1{
+
+.title1 {
     width: 805px;
 }
-.title1 h1{
+
+.title1 h1 {
     text-align: left;
     font-size: 120px;
     margin-bottom: 50px;
     font-weight: 700;
 }
 
-.title1 p{
+.title1 p {
     text-align: left;
     font-size: 23px;
     margin-bottom: 100px;
 }
 
-.recruit .recruit-list{
+.recruit .recruit-list {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     gap: 30px;
 }
 
-.recruit .recruit-list p{
+.recruit .recruit-list p {
     margin: 15px 15px 15px 0;
     font-size: 20px;
 }
-.recruit .recruit-list .answer{
+
+.recruit .recruit-list .answer {
     color: #4d4d4d;
 }
 
-.viewcase{
+.viewcase {
     width: 250px;
     height: 70px;
     border-radius: 500px;
     border: 2px solid;
     position: relative;
     display: flex;
-    justify-content: center; 
-    align-items: center;  
+    justify-content: center;
+    align-items: center;
     text-align: left;
     margin-top: 60px;
     cursor: pointer;
 }
-.viewcase .view-scr{
+
+.viewcase .view-scr {
     width: 30px;
     height: 30px;
     background-color: #fff;
@@ -662,61 +776,71 @@ header {
     justify-content: center;
     align-items: center;
 }
-.viewcase .view-scr .view-line{
+
+.viewcase .view-scr .view-line {
     width: 10px;
     height: 10px;
-    border-top: 2px solid #000; 
-    border-right: 2px solid #000; 
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
     transform: rotate(45deg);
     margin-top: 4px;
     margin-right: 4px;
     margin-bottom: 4px;
     margin-left: 0px;
 }
-.viewcase p{
+
+.viewcase p {
     line-height: 70px;
     margin-left: 35px;
     font-size: 20px;
 }
 
-.viewcase .nexonlogo{
+.viewcase .nexonlogo {
     position: absolute;
     top: -100px;
     left: 380px;
 }
-.foot{
+
+.foot {
     position: relative;
 }
-.allfooter{
+
+.allfooter {
     margin: 0 auto;
     width: 1200px;
     position: relative;
     height: 285px;
 }
 
-.logobox{
+.logobox {
     text-align: left;
 }
-.logobox img{
+
+.logobox img {
     margin-top: 50px;
     margin-bottom: 45px;
     aspect-ratio: auto 73 /23;
 }
-.foot .footer-intro{ 
+
+.foot .footer-intro {
     text-align: left;
 }
-.foot .footer-intro p{
+
+.foot .footer-intro p {
     color: #595959;
 }
-.foot .footer-intro .intro-bold{
+
+.foot .footer-intro .intro-bold {
     font-weight: bold;
     color: #fff;
 }
-.foot .footer-intro .intro-margin{
+
+.foot .footer-intro .intro-margin {
     display: block;
     margin-bottom: 15px;
 }
-.foot .sitebox{
+
+.foot .sitebox {
     width: 170px;
     height: 50px;
     background-color: #333333;
@@ -728,141 +852,197 @@ header {
     align-items: center;
     cursor: pointer;
 }
+
 .siteplus {
     position: relative;
     width: 10px;
     height: 2px;
-    background-color: #fff; 
-  }
-  
-  .siteplus::before {
+    background-color: #fff;
+}
+
+.siteplus::before {
     content: '';
     position: absolute;
-    top: 50%; 
+    top: 50%;
     left: 0;
     transform: translateY(-50%) rotate(90deg);
     width: 10px;
-    height: 2px; 
+    height: 2px;
     background-color: #fff;
-  }
+}
+
 /*--------------------미디어------------------*/
 
 @media screen and (max-width:768px) {
-    .content-main{
+    .content-main {
         height: 660px;
     }
-    .manuBar .manuList{
+
+    .manuBar .manuList {
+        display: none;
+        flex-direction: column;
+        padding-top: 100px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #fff;
+        width: 100%;
+        /* display: flex; */
+        flex-wrap: wrap;
+        align-content: flex-start;
+        padding-left: 70px;
+        gap: 0;
+    }
+
+    .manuBar .manuList li a {
+        color: #000;
+        font-weight: 700;
+    }
+
+    .manuBar .global img {
         display: none;
     }
-    .manuBar .global{
+
+    .manuBar .global .arr {
         display: none;
     }
-    .manuBar .menu-toggle{
+
+    .manuBar .menu-toggle {
         display: block;
+        z-index: 1;
     }
-    .logo .frontlogo{
+
+    .logo .frontlogo {
         width: 500px;
     }
-    .logo .backlogo{
+
+    .logo .backlogo {
         width: 500px;
     }
-    .text-main{
+
+    .text-main {
         height: 720px;
     }
-    .text-main h2{
+
+    .text-main h2 {
         font-size: 60px;
     }
-    .text-main h1{
+
+    .text-main h1 {
         font-size: 80px;
     }
-    .text-main p{
+
+    .text-main p {
         white-space: pre-line;
     }
-    .company-intro{
+
+    .company-intro {
         height: 1420px;
     }
-    .intro-gird{
+
+    .intro-gird {
         grid-template-columns: repeat(2, 1fr);
     }
-    .intro p{
+
+    .intro p {
         font-size: 24px;
     }
-    .intro h3{
+
+    .intro h3 {
         font-size: 32px;
     }
+
     .content-intro {
         margin-bottom: 100px;
     }
-    .content-intro h1{
+
+    .content-intro h1 {
         font-size: 2.1em;
-        
+
     }
-    .game-intro{
+
+    .game-intro {
         width: 650px;
-        padding:0;
+        padding: 0;
     }
-    .game-intro-text{
+
+    .game-intro-text {
         top: -130px;
         position: absolute;
         left: 0;
     }
-    .content-game{
+
+    .content-game {
         margin-top: 200px;
         height: 1300px;
         background-size: 170% 50%;
         background-repeat: no-repeat;
         padding: 0;
     }
-    .content-game h1{
+
+    .content-game h1 {
         font-size: 5em;
     }
-    .game-intro-p{
+
+    .game-intro-p {
         margin-bottom: 300px;
     }
-    .news-line{
+
+    .news-line {
         display: flex;
     }
-    .game-intro .v4-card{
+
+    .game-intro .v4-card {
         width: 200px;
     }
-    .v4-card .v4-logo{
+
+    .v4-card .v4-logo {
         aspect-ratio: auto 1 / 1;
         width: 120px;
         position: absolute;
         top: 15px;
         left: 155px;
     }
-    .v4-card-back{
+
+    .v4-card-back {
         height: 50%;
     }
-    .news{
+
+    .news {
         margin: 0;
         height: 1530px;
     }
-    .news .news-line{
+
+    .news .news-line {
         justify-content: flex-start;
     }
-    .title1{
+
+    .title1 {
         width: 530px;
     }
-    .title1 h1{
+
+    .title1 h1 {
         font-size: 5em;
     }
-    .title1 p{
+
+    .title1 p {
         font-size: 27px;
     }
 
-    .viewcase .nexonlogo{
+    .viewcase .nexonlogo {
         display: none;
     }
-    .recruit{
+
+    .recruit {
         margin: 0;
         height: 825px;
     }
-    .recruit .recruit-list li p{
+
+    .recruit .recruit-list li p {
         font-size: 20px;
     }
-    .allfooter{
+
+    .allfooter {
         width: 580px;
         margin: 0px;
         display: flex;
@@ -871,15 +1051,54 @@ header {
         align-content: center;
         flex-wrap: wrap;
     }
-    .foot .footer-intro p{
+
+    .foot .footer-intro p {
         white-space: pre-line;
     }
-    .logobox img{
+
+    .logobox img {
         width: 150px;
     }
-    .foot .sitebox{
+
+    .foot .sitebox {
         position: absolute;
         top: -95px;
         right: 0px;
+    }
+
+    /*------------- 드롭 ----------*/
+    .dropdown1{
+        display: none !important;
+    }
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-toggle span,
+    .menu-toggle span:before,
+    .menu-toggle span:after {
+        display: block;
+    }
+    .manuBar .logo {
+        z-index: 1;
+    }
+
+    .manuList .media-global {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #cccccc;
+        margin-bottom: 80px;
+        margin-top: 235px;
+    }
+
+    .manuList .media-ko {
+        border: 2px;
+        border-right-style: solid;
+    }
+
+    .manuList .media-ko p,
+    .manuList .media-en p {
+        margin: 10px;
     }
 }
