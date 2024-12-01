@@ -45,7 +45,6 @@ header {
 
 .manuBar .logo a {
     height: 100px;
-    margin: 0 20px;
 
 }
 
@@ -76,6 +75,15 @@ header {
 
 .manuBar .logo {
     padding: 15px 0;
+    width: 135px;
+    margin-left: 60px;
+}
+.manuBar .logoimg{
+    background-image: url(/mainimg/logo.png);
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 /*-------------toggle------------*/
@@ -114,11 +122,10 @@ header {
 .menu-toggle span:after {
     top: 15px;
 }
-.close {
+.global .close {
     display: none;
     position:relative;
     float:left;
-    display:inline;
     height:85px;
     text-align:center;
 }
@@ -126,6 +133,7 @@ header {
     content: "\00d7"; 
     font-size:50pt;
     line-height:35px;
+    color:#000
 }
 /* -------------------------- global--------------------------- */
 .manuBar .global {
@@ -150,17 +158,11 @@ header {
 
 .arr {
     width: 13px;
-    /* 사이즈 */
     height: 13px;
-    /* 사이즈 */
     border-top: 2px solid #fff;
-    /* 선 두께 */
     border-right: 2px solid #fff;
-    /* 선 두께 */
     display: inline-block;
     transform: rotate(135deg);
-    /* 각도 */
-    /* 기본 0px 값으로 해주세요 */
     margin: 10px;
 }
 
@@ -171,8 +173,29 @@ header {
 /*------------------------dropdown----------------------*/
 .manuList li {
     position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
 }
-
+.moblie-dropdown{
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #000;
+    border-right: 2px solid #000;
+    display: inline-block;
+    transform: rotate(135deg);
+    margin: 10px;
+}
+.moblie-dropdown:last-child{
+    width: 10px;
+    height: 10px;
+    border-top: 2px solid #fff;
+    border-right: 2px solid #fff;
+    display: inline-block;
+    transform: rotate(135deg);
+    margin: 10px;
+}
 .dropdown {
     position: absolute;
     top: 100%;
@@ -382,15 +405,19 @@ header {
 }
 
 /*------------------------ 게임 소개------------------*/
-.content-game {
+
+.content-pc{
     text-align: center;
     background-image: url(/mainimg/2background.png);
     background-position: center;
-    background-size: cover;
+    background-size: auto;
+    background-repeat: no-repeat;
     height: 1700px;
     position: relative;
     padding: 200px 0;
+    width: 100%;
 }
+
 
 .game-intro {
     width: 1200px;
@@ -403,14 +430,14 @@ header {
     transform: translate(-50%, -50%);
 }
 
-.content-game h1 {
+.content-pc h1 {
     font-size: 7.5em;
     color: #fff;
     font-weight: 700;
     margin-bottom: 30px;
 }
 
-.content-game p {
+.content-pc p {
     font-size: 28px;
     color: #fff;
 }
@@ -422,7 +449,7 @@ header {
     margin: 50px auto;
     cursor: pointer;
     position: absolute;
-    top: 195px;
+    top: 220px;
     left: 15px;
 }
 
@@ -434,7 +461,7 @@ header {
     cursor: pointer;
     position: absolute;
     top: 75px;
-    right: -15px;
+    right: 50px;
     z-index: 2;
 }
 
@@ -487,7 +514,9 @@ header {
 .hit2-card:hover .hit2-card-inner {
     transform: rotateY(180deg);
 }
-
+.v4-card-front{
+    /* background-image: url(/v4.png); */
+}
 .v4-card-front,
 .v4-card-back,
 .sud-card-front,
@@ -637,7 +666,7 @@ header {
     height: 1230px;
     margin-top: 200px;
     flex-direction: column;
-    overflow: hidden;
+    gap: 100px;
 }
 
 .news .news-title {
@@ -669,16 +698,16 @@ header {
 .news .news-line {
     background: linear-gradient(to right, blue, green);
     height: 10px;
-    margin-top: 50px;
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
     gap: 70px;
     width: 100%;
+    margin: 0;
+    padding: 0;
 }
 
 .news-line .newimg {
-    width: 350px;
     height: 350px;
 }
 
@@ -697,6 +726,10 @@ header {
     font-size: 16px;
     text-align: center;
     color: #fff
+}
+/*------------------------- swiper ---------------------------*/
+.news .mobile{
+    display: none;
 }
 .swiper {
     width: 100%;
@@ -721,14 +754,15 @@ header {
   }
 
   .newimg {
-    display: flex;
-    flex-direction: column; 
-    align-items: center; 
-    justify-content: center; 
-    text-align: center; 
-    gap: 15px; 
-    width: 400px; 
-    height: auto; 
+    display: flex
+    ;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        text-align: center;
+        gap: 15px;
+        width: 400px;
+        height: auto;
   }
   .newimg img {
     margin-top: 0;
@@ -941,6 +975,9 @@ header {
         display: block;
         z-index: 1;
     }
+    .manuBar .global{
+        cursor: default;
+    }
 
     .logo .frontlogo {
         width: 500px;
@@ -1002,7 +1039,7 @@ header {
         left: 0;
     }
 
-    .content-game {
+    .content-pc {
         margin-top: 200px;
         height: 1300px;
         background-size: 170% 50%;
@@ -1010,7 +1047,7 @@ header {
         padding: 0;
     }
 
-    .content-game h1 {
+    .content-pc h1 {
         font-size: 5em;
     }
 
@@ -1117,5 +1154,11 @@ header {
     .manuList .media-en p {
         margin: 10px;
     }
+    .manuList .media-ko p{
+        color: #000;
+    }
     /*-------------------------------swiper---------------------------*/
+    .news .mobile{
+        display: block;
+    }
 }
