@@ -33,10 +33,3 @@ function toggle() {
 
   
 }
-// width: 13px;
-// height: 13px;
-// border-top: 2px solid #fff;
-// border-right: 2px solid #fff;
-// display: inline-block;
-// transform: rotate(135deg);
-// margin: 10px;
