@@ -1,3 +1,5 @@
+/* http://seik1224.dothome.co.kr/lango/index.html */
+
 * {
     margin: 0;
     padding: 0;
@@ -138,12 +140,12 @@ header {
 /* -------------------------- global--------------------------- */
 .manuBar .global {
     line-height: 120px;
-    margin: 0 20px;
+    margin: 0;
     cursor: pointer;
-    width: 259px;
+    width: 135px;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
 }
 
 .manuBar .global li a {
@@ -703,7 +705,6 @@ header {
     display: flex;
     align-items: flex-start;
     justify-content: center;
-    gap: 70px;
     width: 100%;
     margin: 0;
     padding: 0;
