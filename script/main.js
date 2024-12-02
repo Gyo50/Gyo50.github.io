@@ -36,3 +36,6 @@ closeElement.addEventListener("click", () => {
 if(windowSize > 768){
   manuList.style.display = "flex !important";
 }
+
+/*--------------AOS--------------*/
+AOS.init();
