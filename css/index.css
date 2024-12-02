@@ -1074,6 +1074,9 @@ header {
     .news .pc{
         display: none;
     }
+    .news .news-title{
+        width: auto;
+    }
     .title1 {
         width: 530px;
     }
