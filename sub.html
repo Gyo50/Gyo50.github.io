@@ -16,40 +16,59 @@
     <header>
         <nav class="manuBar">
             <div class="logo">
-                <a href="/index.html"><img src="/mainimg/logo.png" alt=""></a>
+                <a href="#">
+                    <div class="logoimg"></div>
+                </a>
             </div>
             <ul class="manuList">
                 <li><a class="manu" href="#">소개</a>
+                    <div class="moblie-dropdown"></div>
                     <ul class="dropdown">
-                        <li><a href="#">회사 소개</a></li>
-                        <li><a href="#">연혁</a></li>
-                        <li><a href="#">팀 소개</a></li>
+                        <li><a href="sub.html">회사 소개</a></li>
+                        <li><a href="sub.html">연혁</a></li>
+                        <li><a href="sub.html">팀 소개</a></li>
                     </ul>
                 </li>
                 <li><a class="manu" href="#">게임</a>
+                    <div class="moblie-dropdown"></div>
                     <ul class="dropdown">
-                        <li><a href="#">V4</a></li>
-                        <li><a href="#">서든어택</a></li>
-                        <li><a href="#">블루아카이브</a></li>
-                        <li><a href="#">Hit2</a></li>
+                        <li><a href="sub.html">V4</a></li>
+                        <li><a href="sub.html">서든어택</a></li>
+                        <li><a href="sub.html">블루아카이브</a></li>
+                        <li><a href="sub.html">Hit2</a></li>
                     </ul>
                 </li>
                 <li><a class="manu" href="#">채용</a>
+                    <div class="moblie-dropdown"></div>
                     <ul class="dropdown">
-                        <li><a href="#">채용 공고</a></li>
-                        <li><a href="#">복리후생</a></li>
+                        <li><a href="sub.html">채용 공고</a></li>
+                        <li><a href="sub.html">복리후생</a></li>
                     </ul>
                 </li>
                 <li><a class="manu" href="#">투자</a>
+                    <div class="moblie-dropdown"></div>
                     <ul class="dropdown">
-                        <li><a href="#">재무 정보</a></li>
-                        <li><a href="#"> 의견</a></li>
+                        <li><a href="sub.html">재무 정보</a></li>
+                        <li><a href="sub.html"> 의견</a></li>
                     </ul>
                 </li>
-                <li><a class="manu" href="#">위치</a></li>
+                <li><a class="manu" href="#">위치</a>
+                    <div class="moblie-dropdown"></div>
+                </li>
+                <div class="media-global">
+                    <div class="media-ko">
+                        <p href="#">KO</p>
+                    </div>
+                    <div class="media-en">
+                        <p href="#">EN</p>
+                    </div>
+                </div>
             </ul>
-            <div class="menu-toggle">&#9776;</div>
             <div class="global">
+                <p onclick="toggle()" class="menu-toggle">
+                    <span></span>
+                </p>
+                <span class="close"></span>
                 <img src="/mainimg/global.png" alt="">
                 <ul class="dropdown1">
                     <li><a href="#">한국어</a></li>
