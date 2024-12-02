@@ -11,31 +11,21 @@ var swiper = new Swiper(".mySwiper", {
   },
 });
 
-var windowSize = window.innerWidth;
 
-const menuToggle = document.querySelector(".menu-toggle");
-const manuList = document.querySelector(".manuList");
-const logoImg = document.querySelector(".logoimg");
-const closeElement = document.querySelector(".close");
+document.addEventListener("DOMContentLoaded", function () {
+  const navItems = document.querySelectorAll(".nav-item");
 
-function toggle() {
-
-  menuToggle.style.display = "none";
-  manuList.style.display = "flex";
-  logoImg.style.backgroundImage = 'url(/mainimg/logo2.png)';
-  closeElement.style.display = "block";
-  closeElement.style.cursor = "pointer";
-
-}
-closeElement.addEventListener("click", () => {
-  menuToggle.style.display = "block";
-  manuList.style.display = "none";
-  logoImg.style.backgroundImage = 'url(/mainimg/logo.png)';
-  closeElement.style.display = "none";
+  navItems.forEach((item) => {
+    item.addEventListener("click", function (e) {
+      if (window.innerWidth <= 768) {
+        e.preventDefault();
+        this.classList.toggle("active");
+      }
+    });
+  });
 });
-if(windowSize > 768){
-  manuList.style.display = "flex !important";
-}
+
 
 /*--------------AOS--------------*/
 AOS.init();
+

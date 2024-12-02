@@ -12,72 +12,75 @@
     <link rel="stylesheet" href="css/index.css">
 </head>
 
+<!-- <div>
+    <video class="start" src="/Nexon  GStar 2022 introduction trailer1080p_1.mp4" muted autoplay></video>
+</div> -->
 <body>
-    <!-- <div>
-        <video class="start" src="/Nexon  GStar 2022 introduction trailer1080p_1.mp4" muted autoplay></video>
-    </div> -->
     <header>
-        <nav class="manuBar">
-            <div class="logo">
-                <a href="#">
-                    <div class="logoimg"></div>
-                </a>
-            </div>
-            <ul class="manuList">
-                <li><a class="manu" href="#">소개</a>
-                    <div class="moblie-dropdown"></div>
-                    <ul class="dropdown">
-                        <li><a href="sub.html">회사 소개</a></li>
-                        <li><a href="sub.html">연혁</a></li>
-                        <li><a href="sub.html">팀 소개</a></li>
-                    </ul>
-                </li>
-                <li><a class="manu" href="#">게임</a>
-                    <div class="moblie-dropdown"></div>
-                    <ul class="dropdown">
-                        <li><a href="sub.html">V4</a></li>
-                        <li><a href="sub.html">서든어택</a></li>
-                        <li><a href="sub.html">블루아카이브</a></li>
-                        <li><a href="sub.html">Hit2</a></li>
-                    </ul>
-                </li>
-                <li><a class="manu" href="#">채용</a>
-                    <div class="moblie-dropdown"></div>
-                    <ul class="dropdown">
-                        <li><a href="sub.html">채용 공고</a></li>
-                        <li><a href="sub.html">복리후생</a></li>
-                    </ul>
-                </li>
-                <li><a class="manu" href="#">투자</a>
-                    <div class="moblie-dropdown"></div>
-                    <ul class="dropdown">
-                        <li><a href="sub.html">재무 정보</a></li>
-                        <li><a href="sub.html"> 의견</a></li>
-                    </ul>
-                </li>
-                <li><a class="manu" href="#">위치</a>
-                    <div class="moblie-dropdown"></div>
-                </li>
-                <div class="media-global">
-                    <div class="media-ko">
-                        <p href="#">KO</p>
-                    </div>
-                    <div class="media-en">
-                        <p href="#">EN</p>
-                    </div>
+        <nav class="navbar">
+            <div class="nav-wrapper">
+                <div class="logo">
+                    <a href="/"></a>
                 </div>
-            </ul>
-            <div class="global">
-                <p onclick="toggle()" class="menu-toggle">
+                <input type="checkbox" id="nav-toggle" class="nav-toggle">
+                <label for="nav-toggle" class="nav-toggle-label">
                     <span></span>
-                </p>
-                <span class="close"></span>
-                <img src="/mainimg/global.png" alt="">
-                <ul class="dropdown1">
-                    <li><a href="#">한국어</a></li>
-                    <li><a href="#">English</a></li>
+                </label>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">소개</a>
+                        <div class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="sub.html">회사소개</a></li>
+                                <li><a href="sub.html">연혁</a></li>
+                                <li><a href="sub.html">팀소개</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">게임</a>
+                        <div class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="sub.html">V4</a></li>
+                                <li><a href="sub.html">서든어택</a></li>
+                                <li><a href="sub.html">블루아카이브</a></li>
+                                <li><a href="sub.html">Hit2</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">채용</a>
+                        <div class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="sub.html">채용공고</a></li>
+                                <li><a href="sub.html">복리후생</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">투자</a>
+                        <div class="dropdown">
+                            <ul class="dropdown-menu">
+                                <li><a href="sub.html">재무정보</a></li>
+                                <li><a href="sub.html">의견</a></li>
+                            </ul>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a href="sub.html" class="nav-link">위치</a>
+                        <div class="dropdown">
+                        </div>
+                    </li>
                 </ul>
-                <div class="arr">
+                <div class="global nav-item">
+                    <img class="global-img" src="/mainimg/global.png" alt="">
+                    <div class="arr"></div>
+                    <div class="gldropdown">
+                        <ul class="gldropdown-menu">
+                            <li><a href="sub.html">한국어</a></li>
+                            <li><a href="sub.html">영어</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -102,32 +105,32 @@
             <p class="small-tiltle"
                 style="color: #0aa0d2; margin-bottom: 40px; text-align: left; font-size: 20px; font-weight: 600;">
                 Business</p>
-            <h1><span class="pc">우리는</span> 유저가 더 즐겁게 게임을 즐길 수 있도록,</h1>
-            <h1 class="company-intro-h1">세상보다 먼저 한 발자국 더 나아갑니다.</h1>
+            <h1><span class="pc h1-span">우리는</span> 유저가 더 즐겁게 게임을 즐길 수 있도록,<br/>
+            세상보다 먼저 한 발자국 더 나아갑니다.</h1>
             <p class="company-intro-p">넥슨 게임즈의 방식으로 더 좋은 게임을 만듭니다.</p>
             <div class="intro-gird">
                 <div class="intro">
                     <img  data-aos="fade-up" src="/mainimg/user.png" alt="" class="intro-img">
                     <h3>유저중심</h3>
-                    <p>가장 먼저 유저 입장에서</br> 생각합니다.</p>
+                    <p>가장 먼저 유저 입장에서<br/> 생각합니다.</p>
                 </div>
                 <div class="intro">
-                    <img src="/mainimg/courage.png" alt="" class="intro-img">
+                    <img data-aos="fade-up" src="/mainimg/courage.png" alt="" class="intro-img">
                     <h3>용기</h3>
                     <p>개척자로서의</br> 용기를 냅니다.</p>
                 </div>
                 <div class="intro">
-                    <img src="/mainimg/efficiency.png" alt="" class="intro-img">
+                    <img data-aos="fade-up" src="/mainimg/efficiency.png" alt="" class="intro-img">
                     <h3>효율성</h3>
                     <p>정말 필요한 일에</br> 집중합니다.</p>
                 </div>
                 <div class="intro">
-                    <img src="/mainimg/ownermind.png" alt="" class="intro-img">
+                    <img data-aos="fade-up" src="/mainimg/ownermind.png" alt="" class="intro-img">
                     <h3>주인의식</h3>
                     <p>한 발자국 더 나아갑니다.</p>
                 </div>
                 <div class="intro">
-                    <img src="/mainimg/communi.png" alt="" class="intro-img">
+                    <img data-aos="fade-up" src="/mainimg/communi.png" alt="" class="intro-img">
                     <h3>커뮤니케이션</h3>
                     <p>명확하게 커뮤니케이션 합니다.</p>
                 </div>
