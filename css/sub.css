@@ -40,7 +40,6 @@ header {
 }
 .manuBar .logo a{
     height: 100px;
-    margin: 0 20px;
 }
 .manuBar {
     background-color: #000;
@@ -153,6 +152,9 @@ header {
  /* 기본 0px 값으로 해주세요 */
     margin: 10px;
 }
+.media-global {
+    display: none;
+}
 /*------------------------dropdown----------------------*/
 .manuList li {
     position: relative;
@@ -169,6 +171,7 @@ header {
     display: inline-block;
     transform: rotate(135deg);
     margin: 10px;
+    display: none;
 }
 .moblie-dropdown:last-child{
     width: 10px;
@@ -178,6 +181,7 @@ header {
     display: inline-block;
     transform: rotate(135deg);
     margin: 10px;
+    display: none;
 }
 
 .dropdown {
@@ -985,5 +989,8 @@ header {
     }
     .manuList .media-ko p{
         color: #000;
+    }
+    .moblie-dropdown{
+        display: block;
     }
 }

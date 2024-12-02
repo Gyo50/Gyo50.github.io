@@ -186,6 +186,7 @@ header {
     display: inline-block;
     transform: rotate(135deg);
     margin: 10px;
+    display: none;
 }
 .moblie-dropdown:last-child{
     width: 10px;
@@ -195,6 +196,7 @@ header {
     display: inline-block;
     transform: rotate(135deg);
     margin: 10px;
+    display: none;
 }
 .dropdown {
     position: absolute;
@@ -1159,6 +1161,9 @@ header {
     }
     .manuList .media-ko p{
         color: #000;
+    }
+    .moblie-dropdown{
+        display: block;
     }
     /*-------------------------------swiper---------------------------*/
     .news .mobile{
