@@ -47,6 +47,11 @@ var swiper = new Swiper(".mySwiper", {
   //       cardBack.style.transform = 'rotateY(0deg)';
   //       v4Img.style.visibility = 'visible';
   //     });
+document.querySelector('.front').addEventListener('mouseenter',()=>{
+  document.querySelector('.front').style.transform = 'rotateY(180deg)';
+})
+
+
 
 document.addEventListener("DOMContentLoaded", function () {
   const navItems = document.querySelectorAll(".nav-item");

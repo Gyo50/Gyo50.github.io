@@ -662,14 +662,14 @@ header {
     font-size: 1.2rem;
 }
 
-/* Hover 시 회전 효과 */
-.v4-card:hover .front {
-    transform: rotateY(-180deg); /* 앞면 뒤집힘 */
+
+/* .v4-card:hover .front {
+    transform: rotateY(-180deg); 
 }
 
 .v4-card:hover .back {
-    transform: rotateY(0deg); /* 뒷면 보이기 */
-}
+    transform: rotateY(0deg); 
+} */
 
 
 
