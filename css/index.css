@@ -393,7 +393,7 @@ header {
     color: #fff;
 }
 
-.v4-card {
+/* .v4-card {
     aspect-ratio: auto 3 / 4;
     width: 300px;
     perspective: 1000px;
@@ -466,7 +466,6 @@ header {
     transform: rotateY(180deg);
 }
 .v4-card-front{
-    /* background-image: url(/v4.png); */
 }
 .v4-card-front,
 .v4-card-back,
@@ -523,7 +522,6 @@ header {
     align-items: center;
 }
 
-/* ----------------- 뒷면 크기 확인하고 고치기 ---------------- */
 .v4-card-back p {
     width: 300px;
     height: 280px;
@@ -585,7 +583,6 @@ header {
     font-size: 1em;
 }
 
-/* ----------------------------------------------------- */
 .v4-card .v4-logo {
     position: absolute;
     top: 20px;
@@ -610,7 +607,119 @@ header {
     position: absolute;
     top: 175px;
     left: -85px;
+} */
+.game-card{
+    height: 1500px;
+    position: relative;
 }
+.game-card .card-infront{
+    position: relative;
+    z-index: 2;
+    perspective: 1000px;
+}
+/*---------------------v4--------------------*/
+.v4-card {
+    width: 322px;
+    height: 322px;
+    perspective: 1000px; /* 3D 원근감 */
+    position: relative;
+    border-radius: 10px; /* 둥근 모서리 */
+}
+
+/* 카드의 양면 */
+.card-face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden; /* 뒷면 숨김 */
+    transition: transform 0.6s ease-in-out; /* 부드러운 회전 효과 */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+
+/* 카드 앞면 */
+.front {
+    transform: rotateY(0deg); /* 초기 상태: 정면 */
+    background-color: #fff;
+}
+
+.front img {
+    position: absolute;
+    top: -142.5px; /* 606px 높이에서 322px로 중앙 정렬 */
+    left: -142px;  /* 606px 너비에서 322px로 중앙 정렬 */
+    width: 606px;
+    height: 607px;
+}
+
+/* 카드 뒷면 */
+.back {
+    transform: rotateY(180deg); /* 초기 상태: 숨김 */
+    background-color: #46423f; /* 어두운 배경 */
+    color: white;
+    font-family: Arial, sans-serif;
+    font-size: 1.2rem;
+}
+
+/* Hover 시 회전 효과 */
+.v4-card:hover .front {
+    transform: rotateY(-180deg); /* 앞면 뒤집힘 */
+}
+
+.v4-card:hover .back {
+    transform: rotateY(0deg); /* 뒷면 보이기 */
+}
+
+
+
+
+
+
+.card-infront .sudden{
+    position: absolute;
+    top: -155px;
+    left: 820px;
+}
+.sudden .suddenimg{
+    z-index: 3;
+    position: relative;
+}
+.sudden .sudden-logo{
+    position: absolute;
+    top: 0;
+    left: -110px;
+    z-index: 1;
+}
+.card-infront .blue{
+    position: absolute;
+    top: 370px;
+    left: 700px;
+}
+.blue .blue-logo{
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+.card-infront .hit2{
+    position: absolute;
+    top: 500px;
+    left: 300px;
+}
+.hit2 .hit2img{
+    position: relative;
+    z-index: 3;
+}
+.hit2 .hit2-logo{
+    position: absolute;
+    top: 175px;
+    left: -65px;
+    z-index: 1;
+}
+
+/*-------------------------back----------------------*/
+
+
 
 /* --------------------------------------------- */
 .news {
