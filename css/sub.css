@@ -583,14 +583,28 @@ header {
     text-align: left;
     cursor: pointer;
 }
+.viewcase:hover {
+    background-color: white;
+}
+
+.viewcase:hover .view-scr {
+    background-color: #000;
+}
+
+.viewcase:hover .view-scr .view-line{
+    border-top: 2px solid #fff; 
+    border-right: 2px solid #fff; 
+}
+
+.viewcase:hover p {
+    color:#000;
+}
+
 .viewcase .view-scr{
     width: 30px;
     height: 30px;
     background-color: #fff;
     border-radius: 50%;
-    position: absolute;
-    top: 21px;
-    left: 45px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -607,8 +621,7 @@ header {
     margin-left: 0px;
 }
 .viewcase p{
-    line-height: 70px;
-    margin-left: 15px;
+    margin-left: 8px;
 }
 
 
