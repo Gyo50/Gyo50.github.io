@@ -115,11 +115,12 @@ header {
   .gldropdown{
     display: none;
     position: fixed;
-    left: 0;
+    right: 0;
     top: 80px;
-    width: 100vw;
+    width: 128px;
     background: #fff;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10%;
   }
   
   .dropdown-menu {
@@ -140,7 +141,7 @@ header {
     display: flex;
     flex-wrap: wrap;
     gap: 2rem;
-    justify-content: flex-end;
+    justify-content: center;
   }
   .dropdown-menu a,
   .gldropdown-menu a {
