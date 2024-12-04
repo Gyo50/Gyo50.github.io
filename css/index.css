@@ -622,10 +622,11 @@ header {
 .v4-card {
     width: 322px;
     height: 322px;
-    perspective: 1000px; 
-    position: relative;
+    perspective: 1000px;
+    position: absolute;
+    top: 145px;
+    left: 55px;
     border-radius: 10px;
-
 }
 
 .card-face {
@@ -639,85 +640,67 @@ header {
     align-items: center;
     border-radius: 10px;
 }
-
+.v4-card .front .v4-img{
+    pointer-events: none;
+} 
 
 .front {
     transform: rotateY(0deg);
+    pointer-events: none;
 }
 
-.front img {
+/* .front img {
     position: absolute;
     top: -142.5px; 
-    left: -142px; 
-    width: 606px;
-    height: 607px;
-}
+    left: -142px;
+} */
 
 
 .back {
-    transform: rotateY(180deg); 
-    background-color: #46423f; 
+    transform: rotateY(180deg);
+    background-color: #46423f;
     color: white;
-    font-family: Arial, sans-serif;
     font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 50%;
 }
 
 
-/* .v4-card:hover .front {
+.v4-card:hover .front {
     transform: rotateY(-180deg); 
 }
 
 .v4-card:hover .back {
     transform: rotateY(0deg); 
-} */
+}
 
-
-
-
-
-
-.card-infront .sudden{
+/*--------------------------------sudden--------------------------*/
+.sudden-card {
+    width: 336px;
+    height: 336px;
+    perspective: 1000px;
     position: absolute;
-    top: -155px;
-    left: 820px;
-}
-.sudden .suddenimg{
-    z-index: 3;
-    position: relative;
-}
-.sudden .sudden-logo{
-    position: absolute;
-    top: 0;
-    left: -110px;
-    z-index: 1;
-}
-.card-infront .blue{
-    position: absolute;
-    top: 370px;
-    left: 700px;
-}
-.blue .blue-logo{
-    position: absolute;
-    top: 30px;
-    left: 10px;
-}
-.card-infront .hit2{
-    position: absolute;
-    top: 500px;
-    left: 300px;
-}
-.hit2 .hit2img{
-    position: relative;
-    z-index: 3;
-}
-.hit2 .hit2-logo{
-    position: absolute;
-    top: 175px;
-    left: -65px;
-    z-index: 1;
+    top: -10px;
+    left: 850px;
+    border-radius: 10px;
 }
 
-/*-------------------------back----------------------*/
+.sudden-card .front .sud-img{
+    pointer-events: none;
+} 
+.sudden-card:hover .front {
+    transform: rotateY(-180deg); 
+}
+
+.sudden-card:hover .back {
+    transform: rotateY(0deg); 
+}
+
+
+/*--------------------------blue-----------------------*/
 
 
 
@@ -1184,18 +1167,8 @@ header {
         width: 200px;
     }
 
-    .v4-card .v4-logo {
-        aspect-ratio: auto 1 / 1;
-        width: 120px;
-        position: absolute;
-        top: 15px;
-        left: 155px;
-    }
 
-    .v4-card-back {
-        height: 50%;
-    }
-
+/*------------------------------------------------------------*/
     .news .pc{
         display: none;
     }
