@@ -1236,7 +1236,7 @@ header {
     }
 
     .game-intro {
-        width: 650px;
+        width: 100%;
         padding: 0;
     }
 
@@ -1256,13 +1256,12 @@ header {
         display: none;
     }
     .title1 {
-        width: 530px;
+        width: 100%;
     }
     .news .news-title{
-        width: 650px;
+        width:100%;
         margin: 0 auto;
-        padding-left: 20px;
-        padding-right: 0;
+        padding: 0;
     }
 
     .title1 h1 {
@@ -1286,7 +1285,7 @@ header {
     }
 
     .allfooter {
-        width: 580px;
+        width: 100%;
         margin: 0px;
         display: flex;
         flex-direction: column;
@@ -1304,7 +1303,13 @@ header {
         top: -95px;
         right: 0px;
     }
-
+    .recruit{
+        width: 100%;
+    }
+    .recruit-title{
+        width: 100%;
+        padding: 0;
+    }
     /*------------- 드롭 ----------*/
     .dropdown1{
         display: none !important;
