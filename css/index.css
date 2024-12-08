@@ -149,6 +149,16 @@ header {
     gap: 2rem;
     justify-content: center;
   }
+  .dropdown-icon {
+    display: none; 
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    stroke: #000;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+  }
+
   .dropdown-menu a,
   .gldropdown-menu a {
     color: #000;
@@ -160,7 +170,9 @@ header {
   .nav-item:hover .gldropdown{
     display: block;
   }
-  
+  .nav-item.active .dropdown-icon {
+    transform: rotate(180deg);
+  }
   .nav-link:hover,
   .dropdown-menu a:hover,
   .gldropdown-menu a:hover {
@@ -402,6 +414,7 @@ header {
     position: relative;
     z-index: 2;
     perspective: 1000px;
+    height: 100%;
 }
 .card-face {
     width: 100%;
@@ -524,6 +537,9 @@ header {
 
 
 /*--------------------------blue-----------------------*/
+.blue-all{
+    
+}
 .blue-card {
     width: 296px;
     height: 296px;
@@ -625,10 +641,11 @@ header {
     background-position: center;
     background-size: auto;
     background-repeat: no-repeat;
-    height: 1000px;
+    height: 1500px;
     position: relative;
     padding: 200px 0;
     width: 100%;
+    overflow: hidden;
 }
 .content-mobile h1 {
     font-size: 75px;
@@ -641,6 +658,11 @@ header {
     color: #fff;
 }
 /*-------------moblie blue-------------*/
+.content-mobile .blue-all{
+    position: absolute;
+    top: -5%;
+    left: 10%;
+}
 .content-mobile .blue-card {
     width: 296px;
     height: 296px;
@@ -653,8 +675,8 @@ header {
 }
 .content-mobile .blue-logo {
     position: absolute;
-    top: 160px;
-    left: 320px;
+    top: 150px;
+    left: 330px;
     z-index: 1;
 }
 .content-mobile .blue-card .card-face p{
@@ -769,29 +791,6 @@ header {
     font-size: 25px;
     color: #ffff;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /* --------------------------------------------- */
@@ -1167,7 +1166,9 @@ header {
         display: block;
       }
 
-      
+      .dropdown-icon {
+        display: inline-block;
+      }
     /*----------------------content----------------------*/
     .content-main {
         height: auto;
@@ -1192,12 +1193,12 @@ header {
         white-space: pre-line;
     }
     .logo .frontlogo{
-        width: 500px;
-        height: 500px;
+        width: 480px;
+        height: 480px;
     }
     .logo .backlogo{
-        width: 500px;
-        height: 500px;
+        width: 480px;
+        height: 480px;
     }
 
 
@@ -1208,7 +1209,7 @@ header {
 
 
     .company-intro {
-        width: auto;
+        width: 100%;
         padding: 0;
     }
 
@@ -1225,7 +1226,7 @@ header {
     }
 
     .content-intro {
-        margin-bottom: 500px;
+        margin-bottom: 300px;
         height: auto;
     }
 
@@ -1238,16 +1239,14 @@ header {
     .game-intro {
         width: 100%;
         padding: 0;
+        height: auto;
     }
 
     .game-intro-text {
-        top: -440px;
-        position: absolute;
-        left: 10px
+        margin-bottom: 300px;
     }
 
     .game-intro-p {
-        margin-bottom: 300px;
     }
 
 
@@ -1356,3 +1355,34 @@ header {
         display: block;
     }
 }
+@media (max-width: 1980px) and (min-width: 1024px) {
+    .nav-menu {
+      gap: calc(120px - ((120 - 40) * ((1980px - 100vw) / (1980 - 1024))));
+    }
+    .news-line .newimg {
+        width: 350px;
+        height: calc(350px - ((350 - 250) * ((1980px - 100vw) / (1980 - 1024))));
+    }
+    .newimg p {
+        font-size: calc(16px - ((16 - 12) * ((1980px - 100vw) / (1980 - 1024))));
+    }
+    .newimg h3 {
+        font-size: calc(24px - ((24 - 18) * ((1980px - 100vw) / (1980 - 1024))));
+    }
+}
+  
+@media (max-width: 1024px) and (min-width: 768px) {
+    .nav-menu {
+      gap: calc(40px - ((40 - 20) * ((1024px - 100vw) / (1024 - 768))));
+    }
+    .news-line .newimg {
+        width: 250px;
+        height: calc(250px - ((250 - 200) * ((1024px - 100vw) / (1024 - 768))));
+    }
+    .newimg p {
+        font-size: calc(12px - ((12 - 10) * ((1024px - 100vw) / (1024 - 768))));
+    }
+    .newimg h3 {
+        font-size: calc(18px - ((18 - 14) * ((1024px - 100vw) / (1024 - 768))));
+    }
+  }

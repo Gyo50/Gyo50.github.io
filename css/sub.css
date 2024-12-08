@@ -143,6 +143,15 @@ header {
     gap: 2rem;
     justify-content: center;
   }
+  .dropdown-icon {
+    display: none;
+    width: 16px;
+    height: 16px;
+    margin-left: 5px;
+    stroke: #000;
+    vertical-align: middle;
+    transition: transform 0.3s ease;
+  }
   .dropdown-menu a,
   .gldropdown-menu a {
     color: #000;
@@ -159,6 +168,9 @@ header {
   .dropdown-menu a:hover,
   .gldropdown-menu a:hover {
     color: #1e82ff;
+  }
+  .nav-item.active .dropdown-icon {
+    transform: rotate(180deg);
   }
   
   .nav-toggle {
@@ -795,8 +807,14 @@ header {
       .nav-item.active .dropdown {
         display: block;
       }
+      .dropdown-icon {
+        display: inline-block;
+      }
       /*------------------------------------content-----------------------------*/
-
+    .company-intro{
+        width: 100%;
+        padding: 0;
+    }
     .content-main{
         height: 1155px;
         background-position: center;
@@ -864,7 +882,7 @@ header {
     }
     .interviwee-intro{
         height: 1570px;
-        width: 620px;
+        width: 100%;
     }
     .content-interviwee .interviwee{
         padding: 50px 0;
@@ -882,7 +900,7 @@ header {
         top:var(--swiper-navigation-top-offset,98%) !important;
     }
     .mobile .swiper-button-next, .swiper-rtl .swiper-button-prev{
-        right: var(--swiper-navigation-sides-offset,500px) !important;
+        right: var(--swiper-navigation-sides-offset,80%) !important;
     }
     .moblie .swiper-slide .interviwee{
         margin: 50px 0;
@@ -915,7 +933,8 @@ header {
         background: #111111;
     }
     .perks .perks-title{
-        width: 620px;
+        width: 100%;
+        padding: 0;
     }
     .perks-title1 h1{
         font-size: 46px;
@@ -949,6 +968,10 @@ header {
         height: auto;
         margin-top: 160px;
         margin-bottom: 160px;
+    }
+    .recruit-title{
+        width: 100%;
+        padding: 0;
     }
     .title1-h1{
         word-break: keep-all;
@@ -1056,3 +1079,14 @@ header {
         display: block;
     }
 }
+@media (max-width: 1980px) and (min-width: 1024px) {
+    .nav-menu {
+      gap: calc(120px - ((120 - 40) * ((1980px - 100vw) / (1980 - 1024))));
+    }
+}
+  
+@media (max-width: 1024px) and (min-width: 768px) {
+    .nav-menu {
+      gap: calc(40px - ((40 - 20) * ((1024px - 100vw) / (1024 - 768))));
+    }
+  }
