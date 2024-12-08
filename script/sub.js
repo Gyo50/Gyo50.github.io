@@ -25,7 +25,6 @@ var swiper = new Swiper(".mySwiper", {
 
 
 function updateAosDelays() {
-    // 특정 화면 조건 (예: 768px 이하)
     if (window.innerWidth <= 768) {
         support.forEach((item, index) => {
 
@@ -40,7 +39,7 @@ function updateAosDelays() {
         });
 
         health.forEach((item, index) => {
-            const title = item.querySelector('p').innerText; // 제목으로 판단  
+            const title = item.querySelector('p').innerText;
             if (title === '휴게실') {
                 item.querySelector('img').setAttribute('data-aos-delay', '0');
             } else if (title === '리프레시 휴가') {
@@ -50,16 +49,16 @@ function updateAosDelays() {
             }
         });
         growth.forEach((item, index) => {
-            const title = item.querySelector('p').innerText; // 제목으로 판단
+            const title = item.querySelector('p').innerText;
             if (title === '사내 동호회') {
                 item.querySelector('img').setAttribute('data-aos-delay', '0');
             }
         });
     }
 
-    AOS.refresh(); // AOS 속성 갱신
+    AOS.refresh();
 }
 AOS.init();
-// 초기 실행 및 화면 크기 변경 시 처리
+
 updateAosDelays();
 window.addEventListener('resize', updateAosDelays);

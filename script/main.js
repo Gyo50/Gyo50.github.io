@@ -31,10 +31,10 @@ AOS.init();
 function updateAosDelays() {
   const introItems = document.querySelectorAll('.intro');
   
-  // 특정 화면 조건 (예: 768px 이하)
+
   if (window.innerWidth <= 768) {
     introItems.forEach((item, index) => {
-      const title = item.querySelector('h3').innerText; // 제목으로 판단
+      const title = item.querySelector('h3').innerText;
       
       if (title === '효율성') {
         item.querySelector('img').setAttribute('data-aos-delay', '0');
@@ -46,9 +46,9 @@ function updateAosDelays() {
     });
   }
 
-  AOS.refresh(); // AOS 속성 갱신
+  AOS.refresh();
 }
 
-// 초기 실행 및 화면 크기 변경 시 처리
+
 updateAosDelays();
 window.addEventListener('resize', updateAosDelays);
