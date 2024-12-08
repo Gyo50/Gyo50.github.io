@@ -243,6 +243,7 @@ header {
     position: absolute;
     top: 100px;
     margin: 30px 0 50px 0;
+    left: 25%;
 }
 
 .logo .frontlogo {
@@ -1244,9 +1245,6 @@ header {
 
     .game-intro-text {
         margin-bottom: 300px;
-    }
-
-    .game-intro-p {
     }
 
 
