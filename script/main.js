@@ -130,29 +130,57 @@ let textMainH1Y = 0;
 let textMainPY = 0;
 
 
-function animate() {
-    frontLogoY -= 0.2;
-    backLogoY -= 0.2;
+// function animate() {
+//     frontLogoY -= 0.2;
+//     backLogoY -= 0.2;
 
 
-    textMainH2Y += 0.2;
-    textMainH1Y += 0.2;
-    textMainPY += 0.2;
+//     textMainH2Y += 0.2;
+//     textMainH1Y += 0.2;
+//     textMainPY += 0.2;
 
-    frontLogo.style.transform = `translateY(${frontLogoY}px)`;
-    backLogo.style.transform = `translateY(${backLogoY}px)`;
-    textMainH2.style.transform = `translateY(${textMainH2Y}px)`;
-    textMainH1.style.transform = `translateY(${textMainH1Y}px)`;
-    textMainP.style.transform = `translateY(${textMainPY}px)`;
+//     frontLogo.style.transform = `translateY(${frontLogoY}px)`;
+//     backLogo.style.transform = `translateY(${backLogoY}px)`;
+//     textMainH2.style.transform = `translateY(${textMainH2Y}px)`;
+//     textMainH1.style.transform = `translateY(${textMainH1Y}px)`;
+//     textMainP.style.transform = `translateY(${textMainPY}px)`;
 
-    if (frontLogoY < -50) frontLogoY = 0;
-    if (backLogoY < -50) backLogoY = 0;
-    if (textMainH2Y > 50) textMainH2Y = 0;
-    if (textMainH1Y > 50) textMainH1Y = 0;
-    if (textMainPY > 50) textMainPY = 0;
+//     if (frontLogoY < -50) frontLogoY = 0;
+//     if (backLogoY < -50) backLogoY = 0;
+//     if (textMainH2Y > 50) textMainH2Y = 0;
+//     if (textMainH1Y > 50) textMainH1Y = 0;
+//     if (textMainPY > 50) textMainPY = 0;
 
-    requestAnimationFrame(animate);
-}
+//     requestAnimationFrame(animate);
+// }
 
 
-animate();
+// animate();
+
+gsap.registerPlugin(ScrollTrigger);
+
+
+
+gsap.from(document.querySelector('.content-main .logo'), {
+  scrollTrigger: {
+    trigger: document.querySelector('.content-main'), 
+    start: "top top", 
+    end: "bottom top", 
+    scrub: true, 
+    // markers: true,
+  },
+  y: 100,
+  duration: 1,
+});
+
+gsap.to(document.querySelector('.text-main'), {
+  scrollTrigger: {
+    trigger: document.querySelector('.content-main'), 
+    start: "top top", 
+    end: "bottom top", 
+    scrub: true, 
+    // markers: true,
+  },
+  y: 100,
+  duration: 1,
+});

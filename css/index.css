@@ -24,12 +24,14 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 
 .wrapper {
     width: 1140px;
     padding: 0 60px;
     margin: 0 auto;
+    box-sizing: border-box;
 }
 
 .start {
@@ -243,7 +245,8 @@ header {
     position: absolute;
     top: 100px;
     margin: 30px 0 50px 0;
-    left: 25%;
+    width:100%;
+    height: 100%;
 }
 
 .logo .frontlogo {
@@ -415,6 +418,7 @@ header {
     position: relative;
     z-index: 2;
     perspective: 1000px;
+    width: 100%;
     height: 100%;
 }
 .card-face {
@@ -662,15 +666,17 @@ header {
 .content-mobile .blue-all{
     position: absolute;
     top: -5%;
-    left: 10%;
+    right: 0;
+    width: 296px;
+    height: 296px;
 }
 .content-mobile .blue-card {
     width: 296px;
     height: 296px;
     perspective: 1000px;
     position: absolute;
-    top: 180px;
-    left: 360px;
+    top: 0;
+    left:0;
     border-radius: 100%;
     z-index: 3;
 }
@@ -865,7 +871,6 @@ header {
 }
 .swiper {
     width: 100%;
-    height: 600px;
     margin-top: 50px;
   }
 
@@ -886,20 +891,42 @@ header {
   }
 
   .newimg {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    text-align: center;
+    text-align: left;
     gap: 15px;
-    width: 400px;
+    width: 80%;
     height: auto;
   }
+ 
   .newimg img {
     margin-top: 0;
+    margin-bottom:26px;
+  }
+
+  .newimg * {
+    margin-bottom:26px;
+  }
+
+  .newimg h3:nth-child(3) {
+    font-size:22px;
+    font-weight: bold;
+  }
+
+  .newimg p {
+    text-align:left;
+    margin-bottom:58px;
   }
   .swiper .swiper-pagination{
-    top: 595px !important;
+    bottom: 0;
+    top: unset;
+    width: 400px;
+    background: rgba(255, 255, 255, 0.4);
+    width: 80%;
+    left: 10%;
+    height: 2px;
+  }
+
+  .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background: white;
   }
 /*------------------------ 채용 ---------------------*/
 .recruit {
@@ -1078,6 +1105,12 @@ header {
 
 /*--------------------미디어------------------*/
 
+@media screen and (max-width:1200px) {
+    .company-intro {width: 100%;}
+    
+
+}
+
 @media screen and (max-width:768px) {
     /*-------------------nav--------------------*/
     .nav-toggle-label {
@@ -1249,6 +1282,9 @@ header {
 
 
 /*------------------------------------------------------------*/
+.news {
+    gap:60px;
+}
     .news .pc{
         display: none;
     }
@@ -1256,9 +1292,24 @@ header {
         width: 100%;
     }
     .news .news-title{
-        width:100%;
+        width:80%;
         margin: 0 auto;
         padding: 0;
+    }
+
+    .new-title1 h2 {
+        font-size:32px;
+        line-height: 1.3;
+        margin:0;
+    }
+    .new-title1 p.small-tiltle {
+        font-size: 18px !important;
+        font-weight: 400 !important;
+    }
+    .new-title1 p {
+        margin-top:26px;
+        font-size: 18px;
+        margin-bottom:0;
     }
 
     .title1 h1 {
