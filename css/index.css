@@ -24,7 +24,7 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 .wrapper {
@@ -644,35 +644,38 @@ header {
     text-align: center;
     background-image: url(/mainimg/2background.png);
     background-position: center;
-    background-size: auto;
+    background-size: 1526px 907px;
     background-repeat: no-repeat;
-    height: 1500px;
+    height: 1000px;
     position: relative;
     padding: 200px 0;
     width: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .content-mobile h1 {
-    font-size: 75px;
+    font-size: 50px;
     color: #fff;
     font-weight: 700;
     margin-bottom: 30px;
 }
 .content-mobile p {
-    font-size: 28px;
+    font-size: 18px;
     color: #fff;
+}
+.content-mobile .game-card{
+    height: 100%;
 }
 /*-------------moblie blue-------------*/
 .content-mobile .blue-all{
     position: absolute;
-    top: -5%;
-    right: 0;
-    width: 296px;
-    height: 296px;
+    top: 6%;
+    right: -12%;
+    width: 200px;
+    height: 200px;
 }
 .content-mobile .blue-card {
-    width: 296px;
-    height: 296px;
+    width: 200px;
+    height: 200px;
     perspective: 1000px;
     position: absolute;
     top: 0;
@@ -682,12 +685,12 @@ header {
 }
 .content-mobile .blue-logo {
     position: absolute;
-    top: 150px;
-    left: 330px;
+    top: 0;
+    left: -35px;
     z-index: 1;
 }
 .content-mobile .blue-card .card-face p{
-    font-size: 26px;
+    font-size: 17px;
     line-height: 1.6;
     color: #a3a19f;
 }
@@ -696,110 +699,160 @@ header {
     font-size: 28px;
     color: #ffff;
 }
+.content-mobile .blue-img{
+    height: 390px;
+    width: 252px;
+}
+.content-mobile .blue-logo img{
+    width: 66px;
+    height: 66px;
+}
 /*---------------------mobile v4---------------*/
+.content-mobile .v4-all{
+    width: 135px;
+    height: 135px;
+    position: absolute;
+    left: 0%;
+    top: 20%;
+}
 .content-mobile .v4-card {
-    width: 196px;
-    height: 196px;
+    width: 135px;
+    height: 135px;
     perspective: 1000px;
     position: absolute;
-    top: 215px;
-    left: 0px;
+    top: 0;
+    left: 0;
     border-radius: 100%;
     z-index: 1;
     text-align: center;
 }
 .content-mobile .v4-logo {
     position: absolute;
-    top: 175px;
-    left: 155px;
+    top: 0px;
+    left: 115px;
     z-index: 1;
 }
 .content-mobile .v4-card .card-face p{
-    font-size: 19px;
+    font-size: 12px;
     line-height: 1.6;
     color: #a3a19f;
 }
 .content-mobile .v4-card .card-face .v4-p{
     font-weight: 700;
-    font-size: 21px;
+    font-size: 14px;
     color: #ffff;
 }
 .content-mobile .v4-card:hover{
     z-index: 2;
 }
-
+.content-mobile .v4-img{
+    height: 238px;
+    width: 219px;
+}
+.content-mobile .v4-logo img{
+    width: 72px;
+    height: 71px;
+}
 /*--------------- mobile hit2-----------------*/
+.content-mobile .hit2-all{
+    width: 133px;
+    height: 133px;
+    position: absolute;
+    top: 35%;
+    left: 80%;
+}
 .content-mobile .hit2-card {
     width: 200px;
     height: 200px;
     perspective: 1000px;
     position: absolute;
-    top: 605px;
-    left: 435px;
+    top: 0;
+    left: 0;
     border-radius: 100%;
     z-index: 1;
 }
 .content-mobile .hit2-card {
-    width: 222px;
-    height: 222px;
+    width: 133px;
+    height: 133px;
     perspective: 1000px;
     position: absolute;
-    top: 605px;
-    left: 435px;
+    top: 0;
+    left: 0;
     border-radius: 100%;
 }
 .content-mobile .hit2-logo {
     position: absolute;
-    top: 600px;
-    left: 385px;
+    top: -25px;
+    left: -30px;
     z-index: 2;
 }
+.content-mobile .hit2-card .front{
+    align-items: flex-end;
+}
 .content-mobile .hit2-card .card-face p {
-    font-size: 22px;
+    font-size: 14px;
     line-height: 1.6;
     color: #a3a19f;
 }
 .content-mobile .hit2-card .card-face .hit2-p{
     font-weight: 700;
-    font-size: 24px;
+    font-size: 16px;
     color: #ffff;
 }
 .content-mobile .hit2-card:hover{
     z-index: 3;
 }
-
-
-
+.content-mobile .hit-img{
+    width: 133px;
+    height: 148px;
+}
+.content-mobile .hit2-logo img{
+    height: 65px;
+    width: 66px;
+}
 /*---------moblie sud---------*/
+.content-mobile .sudden-all{
+    width: 175px;
+    height: 175px;
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
 .content-mobile .sudden-card{
-    width: 255px;
-    height: 255px;
+    width: 175px;
+    height: 175px;
     perspective: 1000px;
     position: absolute;
-    top: 675px;
-    left: 20px;
+    top: 0;
+    left: 0;
     border-radius: 100%;
     z-index: 3;
     text-align: center
 }
 .content-mobile .sud-logo{
     position: absolute;
-    top: 900px;
-    left: 235px;
+    top: -50px;
+    left: 150px;
 }
 .content-mobile .sudden-card .card-face p{
-    font-size: 23px;
+    font-size: 16px;
     line-height: 1.6;
     color: #a3a19f;
 }
 
 .content-mobile .sudden-card .card-face .sud-p{
     font-weight: 700;
-    font-size: 25px;
+    font-size: 16px;
     color: #ffff;
 }
-
-
+.content-mobile .sud-img{
+    height: 248px;
+    width: 226px;
+}
+.content-mobile .sud-logo img{
+    width: 60px;
+    height: 60px;
+}
 /* --------------------------------------------- */
 .news {
     height: 1230px;
@@ -1244,7 +1297,7 @@ header {
 
 
     .company-intro {
-        width: 100%;
+        width: 80%;
         padding: 0;
     }
 
@@ -1261,7 +1314,7 @@ header {
     }
 
     .content-intro {
-        margin-bottom: 300px;
+        margin-bottom: 200px;
         height: auto;
     }
 
@@ -1274,13 +1327,13 @@ header {
         font-size: 20px;
     }
     .game-intro {
-        width: 100%;
+        width: 80%;
         padding: 0;
-        height: auto;
+        height: 100%;
     }
 
     .game-intro-text {
-        margin-bottom: 300px;
+        margin-bottom: 100px;
     }
 
 
@@ -1358,8 +1411,8 @@ header {
         width: 100%;
     }
     .recruit-title{
-        width: 100%;
-        padding: 0 50px;
+        width: 80%;
+        padding: 0;
     }
     /*------------- 드롭 ----------*/
     .dropdown1{
