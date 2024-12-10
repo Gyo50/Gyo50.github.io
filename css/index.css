@@ -661,6 +661,7 @@ header {
 .content-mobile p {
     font-size: 18px;
     color: #fff;
+    margin-bottom: 10px;
 }
 .content-mobile .game-card{
     height: 100%;
