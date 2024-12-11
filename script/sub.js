@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
     navItems.forEach((item) => {
         item.addEventListener("click", function (e) {
             if (window.innerWidth <= 768) {
-                e.preventDefault();
+                // e.preventDefault();
                 this.classList.toggle("active");
             }
         });

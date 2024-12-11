@@ -257,6 +257,7 @@ header {
 }
 
 .logo .frontlogo {
+    width: auto;
     position: absolute;
     top: 10px;
     left: 50%;
@@ -265,6 +266,7 @@ header {
 }
 
 .logo .backlogo {
+    width: auto;
     position: absolute;
     top: 10px;
     left: 50%;
@@ -1190,7 +1192,14 @@ footer.visible{
 @media screen and (max-width:1200px) {
     .company-intro {width: 100%;}
     
+    .text-main h2 {font-size:92px}
+}
 
+@media screen and (max-width:1024px) {
+
+    .text-main h2 {font-size:48px}
+    .text-main h1 {font-size:96px}
+    .text-main p {font-size:24px;}
 }
 
 @media screen and (max-width:768px) {
@@ -1314,13 +1323,12 @@ footer.visible{
         white-space: pre-line;
         font-size: 20px;
     }
+    
     .logo .frontlogo{
-        width: 480px;
-        height: 480px;
+        width: 90%;
     }
     .logo .backlogo{
-        width: 480px;
-        height: 480px;
+        width: 90%;
     }
 
 
