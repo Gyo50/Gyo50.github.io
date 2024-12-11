@@ -348,12 +348,6 @@ header {
 .content-interviwee .interviwee{
     padding-bottom: 50px;
 }
-.interviwee-all{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-}
 
 .content-interviwee h1 {
     font-size: 50px;
@@ -375,43 +369,22 @@ header {
     margin-bottom: 15px;
 }
 
-.content-interviwee .interviwee-silde {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    position: relative;
-}
-.content-interviwee .interviwee-silde .direction{
-    width: 50px;
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: #007aff;
-}
-.interviwee-silde .direction .silde-left{
-    width: 20px;
-    height: 20px;
-    border-top: 2px solid #007aff; 
-    border-right: 2px solid #007aff; 
-    transform: rotate(225deg);
-}
-
-.interviwee-silde .direction .silde-right{
-    width: 20px;
-    height: 20px;
-    border-top: 2px solid #007aff; 
-    border-right: 2px solid #007aff; 
-    transform: rotate(45deg);
-}
-
 .interviwee-silde .interviwee-peolpe{
     position: absolute;
     top: -500px;
     right: 100px;
 }
-
-
+.swiper-slide{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+}
+.swiper-button-prev,.swiper-button-next{
+    top: var(--swiper-navigation-top-offset, 88%);
+}
+.swiper-button-next{
+    right: var(--swiper-navigation-sides-offset, 90%);
+}
 /* --------------------------------------------- */
 .perks{
     flex-direction: column;
