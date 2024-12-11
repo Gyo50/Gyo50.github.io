@@ -689,7 +689,7 @@ header {
     height: 50px;
     background-color: #333333;
     position: absolute;
-    top: -10px;
+    top: 0;
     right: 0;
     display: flex;
     justify-content: space-around;
@@ -984,7 +984,7 @@ header {
         align-items: center;
         justify-content: center;
     }
-    .process .title{
+    .process .title1{
         width: 80%;
     }
     .title1-h1{
