@@ -76,11 +76,12 @@ gsap.from(document.querySelector('.content-main .logo'), {
   scrollTrigger: {
     trigger: document.querySelector('.content-main'), 
     start: "top top", 
-    end: "bottom top", 
+    end: "bottom top",
     scrub: true, 
     // markers: true,
   },
   y: 100,
+  scale:1,
   duration: 1,
 });
 
@@ -103,13 +104,17 @@ document.addEventListener('DOMContentLoaded', function () {
   const news = document.querySelector('.news')
   const recruit = document.querySelector('.recruit')
   const footer = document.querySelector('footer')
-
-
+  const game = document.querySelector('.content-game')
+  const Logo = document.querySelector('.logo')
 
 
   video.addEventListener('ended', function () {
       video.style.opacity = 0;
-
+      
+      for (i = 0; i <= 1; i += 0.1) {
+        Logo.style.scale="toFixed(1)";
+        console.log(i) // 소수점 첫째 자리까지 출력
+      }
       setTimeout(() => {
           video.style.display = 'none';
           contentMain.classList.add('visible');
@@ -117,6 +122,7 @@ document.addEventListener('DOMContentLoaded', function () {
           news.classList.add('visible');
           recruit.classList.add('visible');
           footer.classList.add('visible');
+          game.classList.add('visible');
       }, 1000);
   });
 });

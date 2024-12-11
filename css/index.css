@@ -1176,6 +1176,7 @@ header {
 .content-main,
 .content-intro,
 .news,
+.content-game,
 .recruit,
 footer{
     opacity: 0;
@@ -1183,6 +1184,7 @@ footer{
 .content-main.visible,
 .content-intro.visible,
 .news.visible,
+.content-game.visible,
 .recruit.visible,
 footer.visible{
     opacity: 1;
