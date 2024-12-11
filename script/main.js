@@ -99,6 +99,13 @@ gsap.to(document.querySelector('.text-main'), {
 document.addEventListener('DOMContentLoaded', function () {
   const video = document.querySelector('.start');
   const contentMain = document.querySelector('.content-main');
+  const contentintro = document.querySelector('.content-intro')
+  const news = document.querySelector('.news')
+  const recruit = document.querySelector('.recruit')
+  const footer = document.querySelector('footer')
+
+
+
 
   video.addEventListener('ended', function () {
       video.style.opacity = 0;
@@ -106,6 +113,10 @@ document.addEventListener('DOMContentLoaded', function () {
       setTimeout(() => {
           video.style.display = 'none';
           contentMain.classList.add('visible');
+          contentintro.classList.add('visible');
+          news.classList.add('visible');
+          recruit.classList.add('visible');
+          footer.classList.add('visible');
       }, 1000);
   });
 });
