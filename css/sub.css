@@ -674,6 +674,7 @@ header {
 }
 .foot .footer-intro p{
     color: #595959;
+    font-size: 16px;
 }
 .foot .footer-intro .intro-bold{
     font-weight: bold;
@@ -812,7 +813,7 @@ header {
       }
       /*------------------------------------content-----------------------------*/
     .company-intro{
-        width: 100%;
+        width: 80%;
         padding: 0;
     }
     .content-main{
@@ -833,27 +834,27 @@ header {
         font-size: 60px;
     }
     .content-main .text-main h1{
-        font-size: 85px;
+        font-size: 56px;
         margin-bottom: 70px;
     }
     .text-main p{
         white-space: pre-line;
-        font-size: 48px;
+        font-size: 32px;
     }
     .intro-gird{
         grid-template-columns: repeat(1, 1fr);
     }
     .intro p{
-        font-size: 24px;
+        font-size: 16px;
         white-space: pre-line;
         padding: 0;
     }
     .intro h3{
-        font-size: 32px;
+        font-size: 21px;
         white-space: pre-line;
     }
     .intro .intro-en{
-        font-size: 32px;
+        font-size: 21px;
         padding: 0;
         margin-top: 40px;
         margin-bottom: 45px;
@@ -864,7 +865,7 @@ header {
         padding-bottom: 160px;
     }
     .content-intro h1{
-        font-size: 46px;
+        font-size: 30px;
     }
     .intro .intro-img{
         width: 70px;
@@ -877,12 +878,16 @@ header {
         margin-top: 160px;
     }
     .content-interviwee h1{
-        font-size: 70px;
-        margin-bottom: 120px;
+        font-size: 46px;
+        margin-bottom: 80px;
     }
     .interviwee-intro{
-        height: 1570px;
+        height: 1200px;
+        width: 80%;
+    }
+    .swiper-wrapper .interviwee-peolpe img{
         width: 100%;
+        height: 100%;
     }
     .content-interviwee .interviwee{
         padding: 50px 0;
@@ -911,10 +916,10 @@ header {
         right: 50px;
     }
     .content-interviwee .interviwee-title{
-        font-size: 32px;
+        font-size: 21px;
     }
     .interviwee .interviwee-p{
-        font-size: 24px;
+        font-size: 16px;
     }
     .interviwee-all{
         flex-direction: column-reverse;
@@ -933,11 +938,11 @@ header {
         background: #111111;
     }
     .perks .perks-title{
-        width: 100%;
+        width: 80%;
         padding: 0;
     }
     .perks-title1 h1{
-        font-size: 46px;
+        font-size: 30px;
     }
     .title-span{
         display: block;
@@ -949,19 +954,19 @@ header {
         padding-bottom: 120px;
     }
     .perks-support h3, .perks-health h3, .perks-growth h3{
-        font-size: 32px;
+        font-size: 21px;
         margin-bottom: 40px;
     }
     .perks-support p, .perks-health p, .perks-growth p{
-        font-size: 24px;
-        line-height: 1.1;
+        font-size: 16px;
+        line-height: 1.6;
     }
     .support-img, .health-img, .growth-img{
         grid-template-columns: repeat(2, 1fr);
         justify-content: center
     }
     .support-img div, .health-img div, .growth-img div{
-        margin: 60px 80px 0 80px;
+        margin: 60px auto;
     }
     /*------------------------------- process ---------------*/
     .process{
@@ -969,24 +974,42 @@ header {
         margin-top: 160px;
         margin-bottom: 160px;
     }
-    .recruit-title{
+    .process .recruit-title{
         width: 100%;
         padding: 0;
+    }
+    .process .title11{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .process .title{
+        width: 80%;
     }
     .title1-h1{
         word-break: keep-all;
         margin-bottom: 120px;
     }
+    .process .title1 h1{
+        text-align: left;
+        font-size: 33px;
+        line-height: 1.2;
+        font-weight: 700;
+    }
     .process .linepc{
         display: none;
     }
     .textimg-flex .text-p{
-        font-size: 32px;
+        font-size: 21px;
+        width: 80%;
+        margin: 0 auto 15px;
     }
     .textimg-flex{
         display: flex;
         flex-direction: column-reverse;
         gap: 170px;
+        width: 100%;
     }
     .all-line{
         flex-direction: column;
@@ -1007,15 +1030,18 @@ header {
         display: block;
     }
     .last-p{
-        margin-top: 60px;
-        font-size: 24px;
+        font-size: 16px;
+        width: 80%;
+        margin: 60px auto 0 auto;
     }
     .casebox{
         justify-content: flex-start;
+        width: 80%;
+        margin: 100px auto 0 auto;
     }
     .allfooter{
-        width: 100%;
-        margin: 0px;
+        width: 80%;
+        margin: 0 auto;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -1025,6 +1051,7 @@ header {
 
     .foot .footer-intro p{
         line-height: 1.5;
+        font-size: 13px;
     }
     .logobox img{
         width: 150px;
@@ -1077,6 +1104,10 @@ header {
     }
     .moblie-dropdown{
         display: block;
+    }
+    .small-tiltle {
+        font-size: 18px !important;
+        font-weight: 400 !important;
     }
 }
 @media (max-width: 1980px) and (min-width: 1024px) {
