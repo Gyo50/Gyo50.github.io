@@ -34,10 +34,6 @@ section {
     box-sizing: border-box;
 }
 
-.start {
-    width: 100%;
-}
-
 /* -------------------------- 머리 ---------------------*/
 header {
     right: 0;
@@ -1173,7 +1169,20 @@ header {
     height: 2px;
     background-color: #fff;
 }
-
+.content-main,
+.content-intro,
+.news,
+.recruit,
+footer{
+    opacity: 0;
+}
+.content-main.visible,
+.content-intro.visible,
+.news.visible,
+.recruit.visible,
+footer.visible{
+    opacity: 1;
+}
 /*--------------------미디어------------------*/
 
 @media screen and (max-width:1200px) {
@@ -1183,6 +1192,11 @@ header {
 }
 
 @media screen and (max-width:768px) {
+    .start {
+        width: 100%; /* 화면 너비에 맞춤 */
+        height: 100%; /* 화면 높이에 맞춤 */
+        object-fit: contain; /* 비율 유지하며 화면 안에 맞춤 */
+    }
     /*-------------------nav--------------------*/
     .nav-toggle-label {
         display: flex;
