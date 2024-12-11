@@ -46,6 +46,17 @@ header {
     position: relative;
 
 }
+.start {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 999; /* 콘텐츠 위로 올림 */
+    opacity: 1;
+    transition: opacity 1s ease; /* 부드러운 전환 효과 */
+}
 /********************** NAV **********************/
 .navbar {
     position: fixed;

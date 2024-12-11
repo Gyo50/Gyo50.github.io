@@ -54,67 +54,6 @@ updateAosDelays();
 window.addEventListener('resize', updateAosDelays);
 
 /*--------------------gsap----------------------*/
-// gsap.registerPlugin(ScrollTrigger);
-
-// gsap.to(".logo .frontlogo", {
-//   y: 50,
-//   ease: "power2.out",
-//   scrollTrigger: {
-//     trigger: ".content-main",
-//     start: "top bottom", 
-//     end: "bottom top",
-//     scrub: 1,
-//     markers: false,
-//   }
-// });
-
-// gsap.to(".logo .backlogo", {
-//   y: 50,
-//   ease: "power2.out",
-//   scrollTrigger: {
-//     trigger: ".content-main",
-//     start: "top bottom",
-//     end: "bottom top",
-//     scrub: 1, 
-//     markers: false,
-//   }
-// });
-
-// gsap.to(".text-main h2", {
-//   y: -50,
-//   ease: "power2.out",
-//   scrollTrigger: {
-//     trigger: ".content-main",
-//     start: "top bottom",
-//     end: "bottom top",
-//     scrub: 1,
-//     markers: false,
-//   }
-// });
-
-// gsap.to(".text-main h1", {
-//   y: -50,
-//   ease: "power2.out",
-//   scrollTrigger: {
-//     trigger: ".content-main",
-//     start: "top bottom",
-//     end: "bottom top",
-//     scrub: 1,
-//     markers: false,
-//   }
-// });
-
-// gsap.to(".text-main p", {
-//   y: -50, 
-//   ease: "power2.out",
-//   scrollTrigger: {
-//     trigger: ".content-main", 
-//     end: "bottom top", 
-//     scrub: 1, 
-//     markers: false,
-//   }
-// });
-
 
 const frontLogo = document.querySelector('.logo .frontlogo');
 const backLogo = document.querySelector('.logo .backlogo');
@@ -128,34 +67,6 @@ let backLogoY = 0;
 let textMainH2Y = 0;
 let textMainH1Y = 0;
 let textMainPY = 0;
-
-
-// function animate() {
-//     frontLogoY -= 0.2;
-//     backLogoY -= 0.2;
-
-
-//     textMainH2Y += 0.2;
-//     textMainH1Y += 0.2;
-//     textMainPY += 0.2;
-
-//     frontLogo.style.transform = `translateY(${frontLogoY}px)`;
-//     backLogo.style.transform = `translateY(${backLogoY}px)`;
-//     textMainH2.style.transform = `translateY(${textMainH2Y}px)`;
-//     textMainH1.style.transform = `translateY(${textMainH1Y}px)`;
-//     textMainP.style.transform = `translateY(${textMainPY}px)`;
-
-//     if (frontLogoY < -50) frontLogoY = 0;
-//     if (backLogoY < -50) backLogoY = 0;
-//     if (textMainH2Y > 50) textMainH2Y = 0;
-//     if (textMainH1Y > 50) textMainH1Y = 0;
-//     if (textMainPY > 50) textMainPY = 0;
-
-//     requestAnimationFrame(animate);
-// }
-
-
-// animate();
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -183,4 +94,18 @@ gsap.to(document.querySelector('.text-main'), {
   },
   y: 100,
   duration: 1,
+});
+
+document.addEventListener('DOMContentLoaded', function () {
+  const video = document.querySelector('.start');
+  const contentMain = document.querySelector('.content-main');
+
+  video.addEventListener('ended', function () {
+      video.style.opacity = 0;
+
+      setTimeout(() => {
+          video.style.display = 'none';
+          contentMain.classList.add('visible');
+      }, 1000);
+  });
 });
