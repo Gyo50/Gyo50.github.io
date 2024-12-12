@@ -260,12 +260,14 @@ header {
 .content-intro {
     text-align: center;
     background-color: #fff;
-    height: 2150px;
+    height: auto;
 }
 
 .company-intro {
     width: 1200px;
     margin: 0 auto;
+    height: 100%;
+    padding: 200px 0;
 }
 
 .content-intro h1 {
@@ -329,6 +331,9 @@ header {
     font-size: 20px; 
     font-weight: 600;
 }
+.intro-img{
+    height: 82px;
+}
 
 /*------------------------ 인터뷰 ------------------*/
 .content-interviwee {
@@ -378,12 +383,16 @@ header {
     display: flex;
     align-items: flex-start;
     justify-content: center;
+    height: 100%;
 }
 .swiper-button-prev,.swiper-button-next{
-    top: var(--swiper-navigation-top-offset, 88%);
+    top: var(--swiper-navigation-top-offset, 66%);
 }
 .swiper-button-next{
     right: var(--swiper-navigation-sides-offset, 90%);
+}
+.swiper{
+    height: 100%;
 }
 /* --------------------------------------------- */
 .perks{
@@ -446,7 +455,7 @@ header {
 .support-img div,
 .health-img div,
 .growth-img div{
-    margin: 100px 80px 0 80px;
+    margin: 100px auto 0 auto;
     width: 190px;
     height: 100px;
 }
@@ -855,8 +864,9 @@ header {
         margin-bottom: 80px;
     }
     .interviwee-intro{
-        height: 1200px;
+        height: 1000px;
         width: 80%;
+        padding: 0;
     }
     .swiper-wrapper .interviwee-peolpe img{
         width: 100%;
@@ -875,7 +885,7 @@ header {
     }
     .mobile .swiper-button-next,
     .mobile .swiper-button-prev{
-        top:var(--swiper-navigation-top-offset,98%) !important;
+        top:var(--swiper-navigation-top-offset,70%) !important;
     }
     .mobile .swiper-button-next, .swiper-rtl .swiper-button-prev{
         right: var(--swiper-navigation-sides-offset,80%) !important;
@@ -1087,10 +1097,92 @@ header {
     .nav-menu {
       gap: calc(120px - ((120 - 40) * ((1980px - 100vw) / (1980 - 1024))));
     }
-}
-  
-@media (max-width: 1024px) and (min-width: 768px) {
-    .nav-menu {
-      gap: calc(40px - ((40 - 20) * ((1024px - 100vw) / (1024 - 768))));
+    .company-intro{
+        width: 80%;
     }
-  }
+    .interviwee-intro{
+        width: 80%;
+    }
+    .perks .perks-title{
+        width: 80%;
+    }
+    .perks-title1 h1{
+        font-size: 44px;
+    }
+    .process .recruit-title{
+        width: 80%;
+    }
+    .title1 h1{
+        font-size: 45px;
+    }
+    .textimg-flex .text-p{
+        font-size: 19px;
+    }
+    .last-p{
+        font-size: 13px;
+    }
+    .allfooter{
+        width: 80%;
+    }
+
+}
+
+@media (max-width: 1024px) and (min-width: 768px) {
+      .nav-menu {
+        gap: calc(40px - ((40 - 20) * ((1024px - 100vw) / (1024 - 768))));
+      }
+    .company-intro{
+        width: 80%;
+    }
+    .intro p{
+        font-size: 16px;
+    }
+    /*--------------------------------------*/
+    .interviwee-intro{
+        width: 80%;
+    }
+    .content-interviwee .interviwee-title{
+        font-size: 26px;
+    }
+    .content-interviwee p{
+        font-size: 16px;
+    }
+    /*-----------------------------------------*/
+    .perks .perks-title{
+        width: 80%;
+    }
+    .perks-title1 h1{
+        font-size: 45px;
+    }
+    .perks-support h3, .perks-health h3, .perks-growth h3{
+        font-size: 35px;
+    }
+    .perks-support p, .perks-health p, .perks-growth p{
+        font-size: 17px;
+    }
+    /*--------------------------------------*/
+    .process .recruit-title{
+        width: 80%;
+        padding: 0;
+    }
+    .title1 h1{
+        font-size: 45px;
+    }
+    .textimg-flex .text-p{
+        font-size: 19px;
+    }
+    .last-p{
+        font-size: 13px;
+    }
+    .process-line .process-img{
+        width: 140px;
+        height: 140px;
+    }
+    /*--------------------------------------------*/
+    .allfooter{
+        width: 80%;
+    }
+    @media all and (min-width:769px) and (max-width:1023px){
+
+    }
+}

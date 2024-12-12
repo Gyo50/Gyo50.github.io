@@ -4,9 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
   const navItems = document.querySelectorAll(".nav-item");
 
   navItems.forEach((item) => {
-    item.addEventListener("click", function (e) {
+    item.addEventListener("click", function () {
       if (window.innerWidth <= 768) {
-        e.preventDefault();
         this.classList.toggle("active");
       }
     });
@@ -105,16 +104,11 @@ document.addEventListener('DOMContentLoaded', function () {
   const recruit = document.querySelector('.recruit')
   const footer = document.querySelector('footer')
   const game = document.querySelector('.content-game')
-  const Logo = document.querySelector('.logo')
 
 
   video.addEventListener('ended', function () {
       video.style.opacity = 0;
-      
-      for (i = 0; i <= 1; i += 0.1) {
-        Logo.style.scale="toFixed(1)";
-        console.log(i) // 소수점 첫째 자리까지 출력
-      }
+
       setTimeout(() => {
           video.style.display = 'none';
           contentMain.classList.add('visible');
@@ -125,4 +119,14 @@ document.addEventListener('DOMContentLoaded', function () {
           game.classList.add('visible');
       }, 1000);
   });
+});
+document.addEventListener('DOMContentLoaded', function () {
+  const frontLogo = document.querySelector('.frontlogo');
+  const backLogo = document.querySelector('.backlogo');
+
+  // 일정 시간 후 클래스 추가
+  setTimeout(() => {
+      frontLogo.classList.add('active');
+      backLogo.classList.add('active');
+  }, 13000); // 로드 후 100ms에 애니메이션 시작
 });

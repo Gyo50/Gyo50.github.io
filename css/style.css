@@ -15,10 +15,12 @@
 
 .pc {display:block;}
 .mobile {display:none;}
+.tablet {display: none;}
 
 @media (max-width:768px) {
     .pc {display:none;}
     .mobile {display:block;}
+    .tablet {display: block;}
 
 }
 

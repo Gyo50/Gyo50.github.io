@@ -261,7 +261,8 @@ header {
     position: absolute;
     top: 10px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) scale(0);
+    transition: transform 1.5s ease-in-out;
     z-index: 5;
 }
 
@@ -270,8 +271,13 @@ header {
     position: absolute;
     top: 10px;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translateX(-50%) scale(0);
+    transition: transform 1.5s ease-in-out;
     z-index: 1;
+}
+.logo img.active {
+    transform: translateX(-50%) scale(1); 
+    opacity: 1; 
 }
 
 .text-main {
@@ -1010,10 +1016,6 @@ header {
     width: 1200px;
 }
 
-.title1 {
-    width: 805px;
-}
-
 .title1 h1 {
     text-align: left;
     font-size: 120px;
@@ -1148,8 +1150,8 @@ header {
     height: 50px;
     background-color: #333333;
     position: absolute;
-    top: 0;
-    right: 0;
+    top: 1%;
+    right: 1.5%;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -1193,8 +1195,14 @@ footer.visible{
 
 @media screen and (max-width:1200px) {
     .company-intro {width: 100%;}
-    
     .text-main h2 {font-size:92px}
+    .game-intro{
+        width: 100%;
+    }
+    .recruit-title{
+        width: 87%;
+        padding: 0;
+    }
 }
 
 @media screen and (max-width:1024px) {
@@ -1436,6 +1444,13 @@ footer.visible{
     .recruit .recruit-list li p {
         font-size: 13px;
     }
+    .recruit{
+        width: 100%;
+    }
+    .recruit-title{
+        width: 80%;
+        padding: 0;
+    }
 
     .allfooter {
         width: 80%;
@@ -1458,13 +1473,6 @@ footer.visible{
         position: absolute;
         top: -95px;
         right: 0px;
-    }
-    .recruit{
-        width: 100%;
-    }
-    .recruit-title{
-        width: 80%;
-        padding: 0;
     }
     /*------------- 드롭 ----------*/
     .dropdown1{
@@ -1516,21 +1524,53 @@ footer.visible{
     .nav-menu {
       gap: calc(120px - ((120 - 40) * ((1980px - 100vw) / (1980 - 1024))));
     }
-    .news-line .newimg {
-        width: calc(370px - ((370 - 250) * ((1980px - 100vw) / (1980 - 1024))));
-        height: calc(350px - ((350 - 250) * ((1980px - 100vw) / (1980 - 1024))));
-        text-align: left;
+    .tablet{
+        display: block;
     }
-    .news-line .newimg img{
-        width: calc(370px - ((370 - 250) * ((1980px - 100vw) / (1980 - 1024))));
-        height: calc(350px - ((350 - 250) * ((1980px - 100vw) / (1980 - 1024))));
+    .news .news-line{
+        display: none;
     }
-    .newimg p {
-        font-size: calc(16px - ((16 - 12) * ((1980px - 100vw) / (1980 - 1024))));
+    .news{
+        height: auto;
+    }
+    /*---------------------------------------*/
+    .title1 h1 {
+        font-size: 106px;
+    }
+
+    .title1 p {
+        font-size: 36px;
+    }
+
+    .viewcase .nexonlogo {
+        display: none;
+    }
+
+    .recruit .recruit-list li p {
+        font-size: 26px;
+    }
+    .recruit{
         width: 100%;
+        margin: 100px 0;
+        height: 850px;
     }
-    .newimg h3 {
-        font-size: calc(24px - ((24 - 18) * ((1980px - 100vw) / (1980 - 1024))));
+    /*------*/
+    .content-pc{
+        display: none;
+    }
+    .content-mobile h1{
+        font-size: 100px;
+    }
+    .content-mobile p{
+        font-size: 36px;
+    }
+    .content-mobile .v4-all{
+        left: 15%;
+        top: 10%;
+    }
+    /*----------------*/
+    .allfooter{
+        width: 80%;
     }
 }
   
@@ -1538,14 +1578,56 @@ footer.visible{
     .nav-menu {
       gap: calc(40px - ((40 - 20) * ((1024px - 100vw) / (1024 - 768))));
     }
-    .news-line .newimg {
-        width: 250px;
-        height: calc(250px - ((250 - 200) * ((1024px - 100vw) / (1024 - 768))));
+    .tablet{
+        display: block;
     }
-    .newimg p {
-        font-size: calc(12px - ((12 - 10) * ((1024px - 100vw) / (1024 - 768))));
+    .news .news-line{
+        display: none;
     }
-    .newimg h3 {
-        font-size: calc(18px - ((18 - 14) * ((1024px - 100vw) / (1024 - 768))));
+    .news{
+        height: auto;
+    }
+    /*-------------------------------------------*/
+    .title1 h1 {
+        font-size: 106px;
+    }
+
+    .title1 p {
+        font-size: 36px;
+    }
+
+    .viewcase .nexonlogo {
+        display: none;
+    }
+
+    .recruit .recruit-list li p {
+        font-size: 26px;
+    }
+    .recruit{
+        width: 100%;
+        margin: 100px 0;
+        height: 850px;
+    }
+
+    /*---------------------------*/
+    .content-pc{
+        display: none;
+    }
+    .content-mobile h1{
+        font-size: 100px;
+    }
+    .content-mobile p{
+        font-size: 36px;
+    }
+    .content-mobile .v4-all{
+        left: 15%;
+        top: 10%;
+    }
+    /*--------------------*/
+    .allfooter{
+        width: 80%;
+    }
+    .game-intro{
+        width: 100%;
     }
   }

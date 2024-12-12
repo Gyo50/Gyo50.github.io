@@ -4,11 +4,11 @@ const growth = document.querySelectorAll('.growth-img');
 
 document.addEventListener("DOMContentLoaded", function () {
     const navItems = document.querySelectorAll(".nav-item");
+    const point = document.querySelector('ul li:nth-child(5) a')
 
     navItems.forEach((item) => {
-        item.addEventListener("click", function (e) {
+        item.addEventListener("click", function () {
             if (window.innerWidth <= 768) {
-                // e.preventDefault();
                 this.classList.toggle("active");
             }
         });
@@ -28,7 +28,7 @@ function updateAosDelays() {
     if (window.innerWidth <= 768) {
         support.forEach((item, index) => {
 
-            const title = item.querySelector('p').innerText; // 제목으로 판단
+            const title = item.querySelector('p').innerText;
             if (title === '복지포인트') {
                 item.querySelector('img').setAttribute('data-aos-delay', '0');
             } else if (title === '명절선물') {
