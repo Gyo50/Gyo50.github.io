@@ -407,6 +407,7 @@ header {
 }
 .perks-title hr{
     margin: 90px 0;
+    opacity:0.1;
 }
 .perks-title1{
     padding-bottom: 115px;
@@ -987,6 +988,7 @@ header {
         font-size: 21px;
         width: 80%;
         margin: 0 auto 15px;
+        line-height: 1.3;
     }
     .textimg-flex{
         display: flex;
@@ -1016,6 +1018,7 @@ header {
         font-size: 16px;
         width: 80%;
         margin: 60px auto 0 auto;
+        line-height: 1.3;
     }
     .casebox{
         justify-content: flex-start;

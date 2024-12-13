@@ -917,7 +917,8 @@ header {
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    align-items: center
+    align-items: center;
+    text-align: left;
 }
 
 .news-line .new-years {
@@ -934,7 +935,7 @@ header {
 
 .newimg p {
     font-size: 16px;
-    text-align: center;
+    text-align: left;
     color: #fff
 }
 /*------------------------- swiper ---------------------------*/
@@ -963,7 +964,7 @@ header {
   }
 
   .newimg {
-    text-align: center;
+    text-align: left;
     gap: 15px;
     width: 80%;
     height: auto;
@@ -1521,15 +1522,9 @@ footer.visible{
     .nav-menu {
       gap: calc(120px - ((120 - 40) * ((1980px - 100vw) / (1980 - 1024))));
     }
-    .tablet{
-        display: block;
-    }
-    .news .news-line{
-        display: none;
-    }
-    .news{
-        height: auto;
-    }
+    
+    
+    
     /*---------------------------------------*/
     .title1 h1 {
         font-size: 106px;
@@ -1571,6 +1566,19 @@ footer.visible{
     }
 }
   
+@media (max-width:1024px) {
+    .news .news-line{
+        display: none;
+    }
+    .news{
+        height: auto;
+    }
+    .tablet{
+        display: block;
+    }
+}
+
+
 @media (max-width: 1024px) and (min-width: 768px) {
     .nav-menu {
       gap: calc(40px - ((40 - 20) * ((1024px - 100vw) / (1024 - 768))));
