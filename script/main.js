@@ -77,7 +77,7 @@ gsap.from(document.querySelector('.content-main .logo'), {
     start: "top top", 
     end: "bottom top",
     scrub: true, 
-    // markers: true,
+
   },
   y: 100,
   scale:1,
@@ -90,7 +90,7 @@ gsap.to(document.querySelector('.text-main'), {
     start: "top top", 
     end: "bottom top", 
     scrub: true, 
-    // markers: true,
+
   },
   y: 100,
   duration: 1,
@@ -124,9 +124,9 @@ document.addEventListener('DOMContentLoaded', function () {
   const frontLogo = document.querySelector('.frontlogo');
   const backLogo = document.querySelector('.backlogo');
 
-  // 일정 시간 후 클래스 추가
+  
   setTimeout(() => {
       frontLogo.classList.add('active');
       backLogo.classList.add('active');
-  }, 13000); // 로드 후 100ms에 애니메이션 시작
+  }, 13000);
 });
