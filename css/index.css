@@ -1119,6 +1119,7 @@ header {
 
 .logobox {
     text-align: left;
+    width: 100%;
 }
 
 .logobox img {
