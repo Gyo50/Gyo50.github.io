@@ -135,3 +135,16 @@ document.addEventListener('DOMContentLoaded', function () {
       backLogo.classList.add('active');
   }, 10000);
 });
+document.addEventListener('DOMContentLoaded', function () {
+  const video = document.querySelector('.start');
+
+ 
+  video.addEventListener('play', function () {
+      document.body.style.overflow = 'hidden';
+  });
+
+ 
+  video.addEventListener('ended', function () {
+      document.body.style.overflow = '';
+  });
+});
