@@ -16,11 +16,13 @@
 .pc {display:block;}
 .mobile {display:none;}
 .tablet {display: none;}
+.tablet-swi{display: none;}
 
 @media (max-width:768px) {
     .pc {display:none;}
     .mobile {display:block;}
     .tablet {display: block;}
+    .tablet-swi{display: block;}
 
 }
 

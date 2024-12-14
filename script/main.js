@@ -104,12 +104,13 @@ document.addEventListener('DOMContentLoaded', function () {
   const recruit = document.querySelector('.recruit')
   const footer = document.querySelector('footer')
   const game = document.querySelector('.content-game')
-
+  const videocontainer = document.querySelector('.video-container')
 
   video.addEventListener('ended', function () {
       video.style.opacity = 0;
 
       setTimeout(() => {
+        videocontainer.style.display = 'none';
           video.style.display = 'none';
           contentMain.classList.add('visible');
           contentintro.classList.add('visible');

@@ -29,6 +29,33 @@ section {
     padding:0 60px;
     margin: 0 auto;
 }
+.overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.6);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    clip-path: inset(0 0 0 0); 
+    transition: none;
+}
+.overlay.animate {
+    animation: reveal-animation 2s forwards ease-out;
+}
+@keyframes reveal-animation {
+    0% {
+        clip-path: inset(0 0 0 0); 
+        opacity: 1;
+    }
+    50% {
+        clip-path: inset(30% 0 30% 0);
+        opacity: 0.8;
+    }
+    100% {
+        clip-path: inset(50% 0 50% 0);
+        opacity: 0;
+    }
+}
 
 /* --------------------------머리 ---------------------*/
 header {
@@ -385,11 +412,49 @@ header {
     justify-content: center;
     height: 100%;
 }
+.button-box{
+    border: 2px solid #fff;
+    width: 125px;
+    height: 5%;
+    position: absolute;
+    top: 65%;
+    left: 0;
+}
+.swiper-bar{
+    display: flex;
+    position: absolute;
+    top: 850px;
+    left: 1px;
+    width: 125px;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+.swiper-pagination{
+    position: relative;
+}
+.button-box::before {
+    content: "";
+    position: absolute;
+    background-color: #fff; /* 선 색상 */
+    width: 2px; /* 선 두께 */
+    height: 100%; /* 선 높이 */
+    top: 0;
+    left: 50%; /* 박스의 중앙에 위치 */
+    transform: translateX(-50%); /* 정확히 중앙 정렬 */
+}
 .swiper-button-prev,.swiper-button-next{
-    top: var(--swiper-navigation-top-offset, 66%);
+    top: var(--swiper-navigation-top-offset, 50%);
+    color: #fff;
+}
+.swiper-button-next:after, .swiper-button-prev:after{
+    font-size: 24px;
+}
+.swiper-button-prev{
+    left: var(--swiper-navigation-sides-offset, 13%);
 }
 .swiper-button-next{
-    right: var(--swiper-navigation-sides-offset, 90%);
+    right: var(--swiper-navigation-sides-offset, 13%);
 }
 .swiper{
     height: 100%;
@@ -886,10 +951,14 @@ header {
     }
     .mobile .swiper-button-next,
     .mobile .swiper-button-prev{
-        top:var(--swiper-navigation-top-offset,70%) !important;
+        top:var(--swiper-navigation-top-offset,50%) !important;
     }
     .mobile .swiper-button-next, .swiper-rtl .swiper-button-prev{
-        right: var(--swiper-navigation-sides-offset,80%) !important;
+        right: var(--swiper-navigation-sides-offset,10%) !important;
+    }
+    .swiper-bar{
+        top: 720px;
+        width: 125px;
     }
     .moblie .swiper-slide .interviwee{
         margin: 50px 0;
@@ -1132,7 +1201,7 @@ header {
 
 @media (max-width: 1024px) and (min-width: 768px) {
       .nav-menu {
-        gap: calc(40px - ((40 - 20) * ((1024px - 100vw) / (1024 - 768))));
+        gap: calc(40px - ((60 - 20) * ((1024px - 100vw) / (1024 - 768))));
       }
     .company-intro{
         width: 80%;

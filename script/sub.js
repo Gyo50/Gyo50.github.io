@@ -21,6 +21,10 @@ var swiper = new Swiper(".mySwiper", {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",
     },
+    pagination: {
+        el: '.swiper-pagination',
+        type: 'progressbar',
+      },
 });
 
 
@@ -62,3 +66,8 @@ AOS.init();
 
 updateAosDelays();
 window.addEventListener('resize', updateAosDelays);
+
+document.addEventListener("DOMContentLoaded", function () {
+    const overlay = document.querySelector(".overlay"); 
+    overlay.classList.add("animate");
+});
