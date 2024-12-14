@@ -120,13 +120,18 @@ document.addEventListener('DOMContentLoaded', function () {
       }, 1000);
   });
 });
+
+document.querySelector('.overlay-logo').addEventListener('animationend', function() {
+  this.style.display = 'none';
+});
+
 document.addEventListener('DOMContentLoaded', function () {
-  const frontLogo = document.querySelector('.frontlogo');
-  const backLogo = document.querySelector('.backlogo');
+  const frontLogo = document.querySelector('.content-main .logo .frontlogo');
+  const backLogo = document.querySelector('.content-main .logo .backlogo');
 
   
   setTimeout(() => {
       frontLogo.classList.add('active');
       backLogo.classList.add('active');
-  }, 13000);
+  }, 10000);
 });
