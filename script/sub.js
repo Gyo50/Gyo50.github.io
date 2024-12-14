@@ -68,6 +68,8 @@ updateAosDelays();
 window.addEventListener('resize', updateAosDelays);
 
 document.addEventListener("DOMContentLoaded", function () {
-    const overlay = document.querySelector(".overlay"); 
-    overlay.classList.add("animate");
+    const overlayup = document.querySelector(".overlay-up"); 
+    const overlaydown = document.querySelector(".overlay-down"); 
+    overlayup.classList.add("animate");
+    overlaydown.classList.add("animate");
 });

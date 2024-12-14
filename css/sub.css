@@ -29,11 +29,11 @@ section {
     padding:0 60px;
     margin: 0 auto;
 }
-.overlay {
+.overlay-up {
     position: absolute;
-    background-color: rgba(0, 0, 0, 1);
+    background-color: #000;
     width: 100%;
-    height: 100%;
+    height: 50%;
     top: 0;
     left: 0;
     clip-path: inset(0 0 0 0); 
@@ -41,20 +41,49 @@ section {
     opacity: 50;
     z-index: 99999;
 }
-.overlay.animate {
-    animation: reveal-animation 2s forwards ease-out;
+.overlay-down {
+    position: absolute;
+    background-color: #000;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
+    left: 0;
+    clip-path: inset(0 0 0 0); 
+    transition: none;
+    opacity: 50;
+    z-index: 99999;
 }
-@keyframes reveal-animation {
+.overlay-up.animate {
+    animation: animationup 2s forwards ease-out;
+}
+.overlay-down.animate{
+    animation: animationdown 2s forwards ease-out;
+}
+@keyframes animationup {
     0% {
         clip-path: inset(0 0 0 0); 
         opacity: 1;
     }
     50% {
-        clip-path: inset(30% 0 30% 0);
+        clip-path: inset(0 0 30% 0);
         opacity: 0.8;
     }
     100% {
-        clip-path: inset(50% 0 50% 0);
+        clip-path: inset(0 0 50% 0);
+        opacity: 0;
+    }
+}
+@keyframes animationdown {
+    0% {
+        clip-path: inset(0 0 0 0); 
+        opacity: 1;
+    }
+    50% {
+        clip-path: inset(30% 0 0 0);
+        opacity: 0.8;
+    }
+    100% {
+        clip-path: inset(50% 0 0 0);
         opacity: 0;
     }
 }
