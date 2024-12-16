@@ -17,6 +17,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
 var swiper = new Swiper(".mySwiper", {
     rewind: true,
+    loop: true,
+    spaceBetween: 10,
     navigation: {
         nextEl: ".swiper-button-next",
         prevEl: ".swiper-button-prev",

@@ -71,7 +71,7 @@ gsap.registerPlugin(ScrollTrigger);
 
 
 
-gsap.from(document.querySelector('.content-main .logo'), {
+gsap.to(document.querySelector('.content-main .logo'), {
   scrollTrigger: {
     trigger: document.querySelector('.content-main'), 
     start: "top top", 
@@ -92,7 +92,7 @@ gsap.to(document.querySelector('.text-main'), {
     scrub: true, 
 
   },
-  y: 100,
+  y: 200,
   duration: 1,
 });
 

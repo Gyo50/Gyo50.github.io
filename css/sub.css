@@ -54,19 +54,19 @@ section {
     z-index: 99999;
 }
 .overlay-up.animate {
-    animation: animationup 2s forwards ease-out;
+    animation: animationup 1.2s forwards ease-in;
 }
 .overlay-down.animate{
-    animation: animationdown 2s forwards ease-out;
+    animation: animationdown 1.2s forwards ease-in;
 }
 @keyframes animationup {
     0% {
         clip-path: inset(0 0 0 0); 
-        opacity: 1;
+        opacity: .9;
     }
-    50% {
+    80% {
         clip-path: inset(0 0 30% 0);
-        opacity: 0.8;
+        opacity: .9;
     }
     100% {
         clip-path: inset(0 0 50% 0);
@@ -76,11 +76,11 @@ section {
 @keyframes animationdown {
     0% {
         clip-path: inset(0 0 0 0); 
-        opacity: 1;
+        opacity: .9;
     }
-    50% {
+    80% {
         clip-path: inset(30% 0 0 0);
-        opacity: 0.8;
+        opacity: .9;
     }
     100% {
         clip-path: inset(50% 0 0 0);
@@ -167,7 +167,7 @@ header {
     left: 0;
     top: 90px;
     width: 100vw;
-    background: #fff;
+    background: rgba(0, 0, 0, 0.8);
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
   }
   .gldropdown{
@@ -188,7 +188,7 @@ header {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 5rem;
     justify-content: center;
   }
   .gldropdown-menu{
@@ -200,6 +200,7 @@ header {
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
+    background: #000;
   }
   .dropdown-icon {
     display: none;
@@ -212,7 +213,7 @@ header {
   }
   .dropdown-menu a,
   .gldropdown-menu a {
-    color: #000;
+    color: #fff;
     text-decoration: none;
     white-space: nowrap;
   }
@@ -225,7 +226,7 @@ header {
   .nav-link:hover,
   .dropdown-menu a:hover,
   .gldropdown-menu a:hover {
-    color: #1e82ff;
+    color: #0aa0d2;
   }
   .nav-item.active .dropdown-icon {
     transform: rotate(180deg);
@@ -561,6 +562,7 @@ header {
 .health-img p,
 .growth-img p{
     margin-top: 25px;
+    font-weight: 300;
 }
 
 /*------------------------ 채용 ---------------------*/
@@ -828,7 +830,7 @@ header {
       }
     
       .nav-item {
-        margin: 20px 0;
+        margin: 0;
       }
       .nav-link{
         color: #000;
@@ -839,7 +841,7 @@ header {
       .dropdown {
         position: static;
         box-shadow: none;
-        padding-left: 20px;
+        padding-left: 0px;
       }
     
       .dropdown-menu {
@@ -848,8 +850,7 @@ header {
     
     /* 반응형 스타일 */
       .nav-toggle-label {
-        display: block;
-        padding-top: 15px;
+        display: flex;
         cursor: pointer;
       }
     
@@ -879,6 +880,10 @@ header {
         gap: 1.5rem;
     
       }
+
+      .nav-item:hover .dropdown-icon {
+        stroke :#0aa0d2;
+      }
     
       .nav-item:hover .dropdown {
         display: none;
@@ -886,9 +891,13 @@ header {
     
       .nav-item.active .dropdown {
         display: block;
+        background: #fff;
       }
       .dropdown-icon {
         display: inline-block;
+      }
+      .dropdown-menu a, .gldropdown-menu a {
+        color:#000;
       }
       /*------------------------------------content-----------------------------*/
     .company-intro{
@@ -972,7 +981,7 @@ header {
     .content-interviwee .interviwee{
         padding: 50px 0;
     }
-    .moblie .swiper-wrapper .swiper-slide{
+    .mobile .swiper-wrapper .swiper-slide{
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
@@ -1001,9 +1010,12 @@ header {
     }
     .content-interviwee .interviwee-title{
         font-size: 21px;
+        padding-bottom: 30px;
     }
     .interviwee .interviwee-p{
         font-size: 16px;
+        margin-bottom: 0;
+        line-height: 1.3;
     }
     .interviwee-all{
         flex-direction: column-reverse;
@@ -1089,6 +1101,7 @@ header {
         width: 80%;
         margin: 0 auto 15px;
         line-height: 1.3;
+        
     }
     .textimg-flex{
         display: flex;
@@ -1288,4 +1301,15 @@ header {
     @media all and (min-width:769px) and (max-width:1023px){
 
     }
+}
+
+
+.swiper-horizontal>.swiper-pagination-progressbar, .swiper-pagination-progressbar.swiper-pagination-horizontal, .swiper-pagination-progressbar.swiper-pagination-vertical.swiper-pagination-progressbar-opposite, .swiper-vertical>.swiper-pagination-progressbar.swiper-pagination-progressbar-opposite {
+    height:2px;
+    background:rgba(255,255,255,0.2);
+    top:-1px;
+}
+
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
+    background:#fff;
 }
