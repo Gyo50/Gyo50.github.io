@@ -87,7 +87,41 @@ section {
         opacity: 0;
     }
 }
+.custom-pagination {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 125px;
+    top: 98%;
+}
+.fraction {
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #333;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
 
+.progressbar-container {
+    width: 80%;
+    height: 5px;
+    background: #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.progressbar {
+    height: 100%;
+    width: 0;
+    background: #007aff; /* 진행률 색상 */
+    transition: width 0.3s ease;
+}
 /* --------------------------머리 ---------------------*/
 header {
     right: 0;
@@ -399,7 +433,7 @@ header {
     text-align: center;
     position: relative;
     padding-bottom: 200px;
-    height: 1166px;
+    height: 1000px;
     padding-top: 205px;
 }
 
@@ -430,7 +464,7 @@ header {
     padding-bottom: 50px;
 }
 .interviwee .interviwee-p{
-    margin-bottom: 15px;
+    line-height: 1.5;
 }
 
 .interviwee-silde .interviwee-peolpe{
@@ -440,17 +474,16 @@ header {
 }
 .swiper-slide{
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
-    height: 100%;
+    height: 51%;
 }
 .button-box{
     border: 2px solid #fff;
     width: 125px;
-    height: 5%;
+    height: 7%;
     position: absolute;
-    top: 65%;
-    left: 0;
+    top: 90%;
 }
 .swiper-bar{
     display: flex;
@@ -468,12 +501,12 @@ header {
 .button-box::before {
     content: "";
     position: absolute;
-    background-color: #fff; /* 선 색상 */
-    width: 2px; /* 선 두께 */
-    height: 100%; /* 선 높이 */
+    background-color: #fff;
+    width: 2px;
+    height: 100%;
     top: 0;
-    left: 50%; /* 박스의 중앙에 위치 */
-    transform: translateX(-50%); /* 정확히 중앙 정렬 */
+    left: 50%;
+    transform: translateX(-50%);
 }
 .swiper-button-prev,.swiper-button-next{
     top: var(--swiper-navigation-top-offset, 50%);
@@ -981,27 +1014,22 @@ header {
     .content-interviwee .interviwee{
         padding: 50px 0;
     }
-    .mobile .swiper-wrapper .swiper-slide{
+    .swiper-wrapper .swiper-slide{
         display: flex;
         flex-direction: column-reverse;
-        align-items: center;
+        align-items: flex-start;
+        height: 60%;
     }
-    .moblie .interviwee-peolpe{
-        padding-bottom: 100px !important;
-    }
-    .mobile .swiper-button-next,
-    .mobile .swiper-button-prev{
+    .swiper-button-next,
+    .swiper-button-prev{
         top:var(--swiper-navigation-top-offset,50%) !important;
     }
-    .mobile .swiper-button-next, .swiper-rtl .swiper-button-prev{
+    .swiper-button-next, .swiper-rtl .swiper-button-prev{
         right: var(--swiper-navigation-sides-offset,10%) !important;
     }
     .swiper-bar{
         top: 720px;
         width: 125px;
-    }
-    .moblie .swiper-slide .interviwee{
-        margin: 50px 0;
     }
     .interviwee-silde .interviwee-peolpe{
         position: absolute;
@@ -1207,6 +1235,17 @@ header {
     .small-tiltle {
         font-size: 18px !important;
         font-weight: 400 !important;
+    }
+    .button-box{
+        width: 100px;
+        height: 5%;
+        right: 0;
+        top: 85%;
+    }
+    .custom-pagination{
+        right: 0;
+        width: 104px;
+        top: 91%;
     }
 }
 @media (max-width: 1980px) and (min-width: 1024px) {

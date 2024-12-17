@@ -2,6 +2,7 @@ const support = document.querySelectorAll('.support-img');
 const health = document.querySelectorAll('.health-img');
 const growth = document.querySelectorAll('.growth-img');
 
+
 document.addEventListener("DOMContentLoaded", function () {
     const navItems = document.querySelectorAll(".nav-item");
     const point = document.querySelector('ul li:nth-child(5) a')
@@ -26,9 +27,30 @@ var swiper = new Swiper(".mySwiper", {
     pagination: {
         el: '.swiper-pagination',
         type: 'progressbar',
-      },
+        type: "fraction",
+    },
+    on: {
+        init: function () {
+            updateProgress(this);
+        },
+        slideChange: function () {
+            updateProgress(this);
+        },
+    },
 });
 
+function updateProgress(swiperInstance) {
+    const currentSlide = swiperInstance.realIndex + 1; // 현재 슬라이드 (0부터 시작하므로 +1)
+    const totalSlides = swiperInstance.slides.length; // 전체 슬라이드 수
+
+    // Fraction 업데이트
+    document.getElementById("current-slide").textContent = currentSlide;
+    document.getElementById("total-slides").textContent = totalSlides;
+
+    // Progressbar 업데이트
+    const progressPercentage = (currentSlide / totalSlides) * 100;
+    document.querySelector(".progressbar").style.width = `${progressPercentage}%`;
+}
 
 function updateAosDelays() {
     if (window.innerWidth <= 768) {
@@ -75,3 +97,53 @@ document.addEventListener("DOMContentLoaded", function () {
     overlayup.classList.add("animate");
     overlaydown.classList.add("animate");
 });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// // 요소 가져오기
+// const nextButton = document.querySelector('.swiper-button-next');
+// const prevButton = document.querySelector('.swiper-button-prev');
+// const currentNumber = document.querySelector('.swiper-bar p');
+
+// // 초기 값 설정
+// let currentValue = 1;
+// const maxValue = 3;
+
+// // 숫자 업데이트 함수
+// function updateNumber() {
+//     // 값이 10 이하일 때 앞에 '0' 붙이기
+//     currentNumber.textContent = currentValue < 10 ? `0${currentValue}` : `${currentValue}`;
+// }
+
+// // Next 버튼 클릭 이벤트
+// nextButton.addEventListener('click', () => {
+//     currentValue++;
+//     if (currentValue > maxValue) {
+//         currentValue = 1; // 03에서 다시 01로 순환
+//     }
+//     updateNumber();
+// });
+
+// // Prev 버튼 클릭 이벤트
+// prevButton.addEventListener('click', () => {
+//     currentValue--;
+//     if (currentValue < 1) {
+//         currentValue = maxValue; // 01에서 03으로 순환
+//     }
+//     updateNumber();
+// });
+
+// // 초기 숫자 설정
+// updateNumber();
