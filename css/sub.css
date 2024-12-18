@@ -475,7 +475,7 @@ header {
 .swiper-slide{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     height: 51%;
 }
 .button-box{
@@ -483,7 +483,7 @@ header {
     width: 125px;
     height: 7%;
     position: absolute;
-    top: 90%;
+    top: 89.5%;
 }
 .swiper-bar{
     display: flex;
@@ -1351,4 +1351,12 @@ header {
 
 .swiper-pagination-progressbar .swiper-pagination-progressbar-fill {
     background:#fff;
+}
+
+
+.progressbar-container {height:2px;background: rgba(255,255,255,0.2);}
+.progressbar {background:#fff;}
+
+#current-slide, #total-slides {
+    color:#fff;
 }

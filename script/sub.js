@@ -44,8 +44,8 @@ function updateProgress(swiperInstance) {
     const totalSlides = swiperInstance.slides.length; // 전체 슬라이드 수
 
     // Fraction 업데이트
-    document.getElementById("current-slide").textContent = currentSlide;
-    document.getElementById("total-slides").textContent = totalSlides;
+    document.getElementById("current-slide").textContent = '0' + currentSlide;
+    document.getElementById("total-slides").textContent = '0' + totalSlides;
 
     // Progressbar 업데이트
     const progressPercentage = (currentSlide / totalSlides) * 100;
