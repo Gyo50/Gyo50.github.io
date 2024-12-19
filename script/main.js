@@ -107,12 +107,12 @@ document.addEventListener('DOMContentLoaded', function () {
   const videocontainer = document.querySelector('.video-container')
 
   video.addEventListener('ended', function () {
-      video.style.opacity = 0;
+      video.style.display = 'none';
 
       setTimeout(() => {
         videocontainer.style.display = 'none';
           video.style.display = 'none';
-          contentMain.classList.add('visible');
+          contentMain.style.display='flex';
           contentintro.classList.add('visible');
           news.classList.add('visible');
           recruit.classList.add('visible');
