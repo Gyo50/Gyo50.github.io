@@ -1280,6 +1280,7 @@ header {
         width: 80%;
     }
 
+
 }
 
 @media (max-width: 1024px) and (min-width: 768px) {
@@ -1337,8 +1338,11 @@ header {
     .allfooter{
         width: 80%;
     }
-    @media all and (min-width:769px) and (max-width:1023px){
-
+    .swiper-wrapper .interviwee-peolpe img{
+        max-width: 386px;
+    }
+    .tabletbr{
+        display: none;
     }
 }
 
@@ -1359,4 +1363,9 @@ header {
 
 #current-slide, #total-slides {
     color:#fff;
+}
+@media screen and (max-width:1300px){
+    .tabletbr{
+        display: none;
+    }
 }
