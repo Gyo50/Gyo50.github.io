@@ -1632,7 +1632,9 @@ footer.visible{
     }
     .news{
         height: auto;
+        margin-bottom: 300px;
     }
+
 }
 
 
@@ -1692,4 +1694,5 @@ footer.visible{
     .game-intro{
         width: 100%;
     }
+    .tablet-swi{display: block;}
   }
