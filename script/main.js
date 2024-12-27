@@ -134,7 +134,7 @@ document.addEventListener('DOMContentLoaded', function () {
   setTimeout(() => {
       frontLogo.classList.add('active');
       backLogo.classList.add('active');
-  }, 13000);
+  }, 600);
 });
 document.addEventListener('DOMContentLoaded', function () {
   const video = document.querySelector('.start');

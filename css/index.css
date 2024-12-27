@@ -70,7 +70,7 @@ header {
     height: 100%;
     transform: translate(-50%, -50%) scale(5);
     opacity: 0;
-    animation: logoAnimation 14s ease-in-out forwards;
+    animation: logoAnimation 4s ease-in-out forwards;
 }
 
 @keyframes logoAnimation {
