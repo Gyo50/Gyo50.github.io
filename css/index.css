@@ -331,6 +331,10 @@ header {
     flex-direction: column;
     max-width: 1260px;
     height: 100%;
+    z-index: 3;
+    position: absolute;
+    top: -10%;
+    left: 16%;
 }
 
 .text-main h2 {
