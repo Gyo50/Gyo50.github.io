@@ -329,12 +329,11 @@ header {
 
 .text-main {
     flex-direction: column;
-    max-width: 1260px;
     height: 100%;
     z-index: 3;
     position: absolute;
     top: -10%;
-    left: 16%;
+    left: 0;
 }
 
 .text-main h2 {
@@ -1376,7 +1375,7 @@ footer.visible{
       }
     /*----------------------content----------------------*/
     .content-main {
-        height: auto;
+        height: 530px;
         padding-bottom: 100PX;
     }
 
